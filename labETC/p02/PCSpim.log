@@ -1,0 +1,361 @@
+Messages
+=========================
+SPIM Version 6.5 of January 4, 2003
+Copyright 1990-2003 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+SPIM Version 6.5 of January 4, 2003
+Copyright 1990-2003 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+Memory and registers have been cleared, and the simulator reinitialized.
+
+C:\Users\artsa\OneDrive - UPV\Laboratorios\2do año\labETC\p02\forever.s has been successfully loaded
+[0x00400000]        0x34100000  ori $16, $0, 0                  ; 5: li $s0, 0
+[0x00400004]        0x34020005  ori $2, $0, 5                   ; 7: li $v0,5
+[0x00400008]        0x0000000c  syscall                         ; 8: syscall
+SPIM Version 6.5 of January 4, 2003
+Copyright 1990-2003 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+Memory and registers have been cleared, and the simulator reinitialized.
+
+C:\Users\artsa\OneDrive - UPV\Laboratorios\2do año\labETC\p02\forever.s has been successfully loaded
+SPIM Version 6.5 of January 4, 2003
+Copyright 1990-2003 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+Memory and registers have been cleared, and the simulator reinitialized.
+
+C:\Users\artsa\OneDrive - UPV\Laboratorios\2do año\labETC\p02\forever.s has been successfully loaded
+[0x00400004]        0x34020005  ori $2, $0, 5                   ; 7: li $v0,5
+[0x00400008]        0x0000000c  syscall                         ; 8: syscall
+[0x0040000c]        0x02028021  addu $16, $16, $2               ; 9: addu $s0,$s0,$v0
+[0x00400010]        0x34020001  ori $2, $0, 1                   ; 10: li $v0,1
+[0x00400014]        0x00102021  addu $4, $0, $16                ; 11: move $a0, $s0
+[0x00400018]        0x0000000c  syscall                         ; 12: syscall
+[0x0040001c]        0x3402000b  ori $2, $0, 11                  ; 13: li $v0,11
+[0x00400020]        0x3404000a  ori $4, $0, 10                  ; 14: li $a0, '\n'
+[0x00400024]        0x0000000c  syscall                         ; 15: syscall
+[0x00400028]        0x0401fff7  bgez $0 -36 [loop-0x00400028]   ; 16: b loop
+[0x00400004]        0x34020005  ori $2, $0, 5                   ; 7: li $v0,5
+[0x00400008]        0x0000000c  syscall                         ; 8: syscall
+[0x0040000c]        0x02028021  addu $16, $16, $2               ; 9: addu $s0,$s0,$v0
+[0x00400010]        0x34020001  ori $2, $0, 1                   ; 10: li $v0,1
+[0x00400014]        0x00102021  addu $4, $0, $16                ; 11: move $a0, $s0
+[0x00400018]        0x0000000c  syscall                         ; 12: syscall
+[0x0040001c]        0x3402000b  ori $2, $0, 11                  ; 13: li $v0,11
+[0x00400020]        0x3404000a  ori $4, $0, 10                  ; 14: li $a0, '\n'
+[0x00400024]        0x0000000c  syscall                         ; 15: syscall
+[0x00400028]        0x0401fff7  bgez $0 -36 [loop-0x00400028]   ; 16: b loop
+[0x00400004]        0x34020005  ori $2, $0, 5                   ; 7: li $v0,5
+[0x00400008]        0x0000000c  syscall                         ; 8: syscall
+[0x0040000c]        0x02028021  addu $16, $16, $2               ; 9: addu $s0,$s0,$v0
+[0x00400010]        0x34020001  ori $2, $0, 1                   ; 10: li $v0,1
+[0x00400014]        0x00102021  addu $4, $0, $16                ; 11: move $a0, $s0
+[0x00400018]        0x0000000c  syscall                         ; 12: syscall
+[0x0040001c]        0x3402000b  ori $2, $0, 11                  ; 13: li $v0,11
+[0x00400020]        0x3404000a  ori $4, $0, 10                  ; 14: li $a0, '\n'
+[0x00400024]        0x0000000c  syscall                         ; 15: syscall
+[0x00400028]        0x0401fff7  bgez $0 -36 [loop-0x00400028]   ; 16: b loop
+[0x00400004]        0x34020005  ori $2, $0, 5                   ; 7: li $v0,5
+[0x00400008]        0x0000000c  syscall                         ; 8: syscall
+SPIM Version 6.5 of January 4, 2003
+Copyright 1990-2003 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+Memory and registers have been cleared, and the simulator reinitialized.
+
+C:\Users\artsa\OneDrive - UPV\Laboratorios\2do año\labETC\p02\forever.s has been successfully loaded
+SPIM Version 6.5 of January 4, 2003
+Copyright 1990-2003 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+Memory and registers have been cleared, and the simulator reinitialized.
+
+C:\Users\artsa\OneDrive - UPV\Laboratorios\2do año\labETC\p02\forever.s has been successfully loaded
+[0x00400000]        0x34100000  ori $16, $0, 0                  ; 5: li $s0, 0
+[0x00400004]        0x34020005  ori $2, $0, 5                   ; 7: li $v0,5
+[0x00400008]        0x0000000c  syscall                         ; 8: syscall
+SPIM Version 6.5 of January 4, 2003
+Copyright 1990-2003 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+Memory and registers have been cleared, and the simulator reinitialized.
+
+C:\Users\artsa\OneDrive - UPV\Laboratorios\2do año\labETC\p02\break.s has been successfully loaded
+[0x00400000]        0x34100000  ori $16, $0, 0                  ; 5: li $s0, 0
+[0x00400004]        0x34020005  ori $2, $0, 5                   ; 7: li $v0,5
+[0x00400008]        0x0000000c  syscall                         ; 8: syscall
+[0x0040000c]        0x10020009  beq $0, $2, 36 [fin-0x0040000c] ; 9: beq $v0, 0, fin
+[0x00400010]        0x02028021  addu $16, $16, $2               ; 10: addu $s0,$s0,$v0
+[0x00400014]        0x34020001  ori $2, $0, 1                   ; 11: li $v0,1
+[0x00400018]        0x00102021  addu $4, $0, $16                ; 12: move $a0, $s0
+[0x0040001c]        0x0000000c  syscall                         ; 13: syscall
+[0x00400020]        0x3402000b  ori $2, $0, 11                  ; 14: li $v0,11
+[0x00400024]        0x3404000a  ori $4, $0, 10                  ; 15: li $a0, '\n'
+[0x00400028]        0x0000000c  syscall                         ; 16: syscall
+[0x0040002c]        0x0401fff6  bgez $0 -40 [loop-0x0040002c]   ; 17: b loop
+[0x00400004]        0x34020005  ori $2, $0, 5                   ; 7: li $v0,5
+[0x00400008]        0x0000000c  syscall                         ; 8: syscall
+[0x0040000c]        0x10020009  beq $0, $2, 36 [fin-0x0040000c] ; 9: beq $v0, 0, fin
+[0x00400030]        0x3402000a  ori $2, $0, 10                  ; 19: li $v0,10
+[0x00400034]        0x0000000c  syscall                         ; 20: syscall
+Exception occurred at PC=0x00000000
+  Bad address in text read: 0x00000000
+Exception occurred at PC=0x00000000
+  Bad address in text read: 0x00000000
+Exception occurred at PC=0x00000000
+  Bad address in text read: 0x00000000
+Exception occurred at PC=0x00000000
+  Bad address in text read: 0x00000000
+Exception occurred at PC=0x00000000
+  Bad address in text read: 0x00000000
+Exception occurred at PC=0x00000000
+  Bad address in text read: 0x00000000
+Exception occurred at PC=0x00000000
+  Bad address in text read: 0x00000000
+Exception occurred at PC=0x00000000
+  Bad address in text read: 0x00000000
+Exception occurred at PC=0x00000000
+  Bad address in text read: 0x00000000
+SPIM Version 6.5 of January 4, 2003
+Copyright 1990-2003 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+Memory and registers have been cleared, and the simulator reinitialized.
+
+C:\Users\artsa\OneDrive - UPV\Laboratorios\2do año\labETC\p02\break.s has been successfully loaded
+[0x00400000]        0x34100000  ori $16, $0, 0                  ; 5: li $s0, 0
+[0x00400004]        0x34020005  ori $2, $0, 5                   ; 7: li $v0,5
+[0x00400008]        0x0000000c  syscall                         ; 8: syscall
+[0x0040000c]        0x10500009  beq $2, $16, 36 [fin-0x0040000c]; 9: beq $v0, $s0, fin
+[0x00400010]        0x02028021  addu $16, $16, $2               ; 10: addu $s0,$s0,$v0
+[0x00400014]        0x34020001  ori $2, $0, 1                   ; 11: li $v0,1
+[0x00400018]        0x00102021  addu $4, $0, $16                ; 12: move $a0, $s0
+[0x0040001c]        0x0000000c  syscall                         ; 13: syscall
+[0x00400020]        0x3402000b  ori $2, $0, 11                  ; 14: li $v0,11
+[0x00400024]        0x3404000a  ori $4, $0, 10                  ; 15: li $a0, '\n'
+[0x00400028]        0x0000000c  syscall                         ; 16: syscall
+[0x0040002c]        0x0401fff6  bgez $0 -40 [loop-0x0040002c]   ; 17: b loop
+[0x00400004]        0x34020005  ori $2, $0, 5                   ; 7: li $v0,5
+[0x00400008]        0x0000000c  syscall                         ; 8: syscall
+[0x0040000c]        0x10500009  beq $2, $16, 36 [fin-0x0040000c]; 9: beq $v0, $s0, fin
+[0x00400010]        0x02028021  addu $16, $16, $2               ; 10: addu $s0,$s0,$v0
+[0x00400014]        0x34020001  ori $2, $0, 1                   ; 11: li $v0,1
+[0x00400018]        0x00102021  addu $4, $0, $16                ; 12: move $a0, $s0
+[0x0040001c]        0x0000000c  syscall                         ; 13: syscall
+[0x00400020]        0x3402000b  ori $2, $0, 11                  ; 14: li $v0,11
+[0x00400024]        0x3404000a  ori $4, $0, 10                  ; 15: li $a0, '\n'
+[0x00400028]        0x0000000c  syscall                         ; 16: syscall
+[0x0040002c]        0x0401fff6  bgez $0 -40 [loop-0x0040002c]   ; 17: b loop
+[0x00400004]        0x34020005  ori $2, $0, 5                   ; 7: li $v0,5
+[0x00400008]        0x0000000c  syscall                         ; 8: syscall
+SPIM Version 6.5 of January 4, 2003
+Copyright 1990-2003 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+Memory and registers have been cleared, and the simulator reinitialized.
+
+C:\Users\artsa\OneDrive - UPV\Laboratorios\2do año\labETC\p02\break.s has been successfully loaded
+[0x00400004]        0x34020005  ori $2, $0, 5                   ; 7: li $v0,5
+[0x00400008]        0x0000000c  syscall                         ; 8: syscall
+[0x0040000c]        0x10500009  beq $2, $16, 36 [fin-0x0040000c]; 9: beq $v0, $s0, fin
+[0x00400010]        0x00428021  addu $16, $2, $2                ; 10: addu $s0,$v0,$v0
+[0x00400014]        0x34020001  ori $2, $0, 1                   ; 11: li $v0,1
+[0x00400018]        0x00102021  addu $4, $0, $16                ; 12: move $a0, $s0
+[0x0040001c]        0x0000000c  syscall                         ; 13: syscall
+[0x00400020]        0x3402000b  ori $2, $0, 11                  ; 14: li $v0,11
+[0x00400024]        0x3404000a  ori $4, $0, 10                  ; 15: li $a0, '\n'
+[0x00400028]        0x0000000c  syscall                         ; 16: syscall
+[0x0040002c]        0x0401fff6  bgez $0 -40 [loop-0x0040002c]   ; 17: b loop
+[0x00400004]        0x34020005  ori $2, $0, 5                   ; 7: li $v0,5
+[0x00400008]        0x0000000c  syscall                         ; 8: syscall
+[0x0040000c]        0x10500009  beq $2, $16, 36 [fin-0x0040000c]; 9: beq $v0, $s0, fin
+[0x00400010]        0x00428021  addu $16, $2, $2                ; 10: addu $s0,$v0,$v0
+[0x00400014]        0x34020001  ori $2, $0, 1                   ; 11: li $v0,1
+[0x00400018]        0x00102021  addu $4, $0, $16                ; 12: move $a0, $s0
+[0x0040001c]        0x0000000c  syscall                         ; 13: syscall
+[0x00400020]        0x3402000b  ori $2, $0, 11                  ; 14: li $v0,11
+[0x00400024]        0x3404000a  ori $4, $0, 10                  ; 15: li $a0, '\n'
+[0x00400028]        0x0000000c  syscall                         ; 16: syscall
+[0x0040002c]        0x0401fff6  bgez $0 -40 [loop-0x0040002c]   ; 17: b loop
+[0x00400004]        0x34020005  ori $2, $0, 5                   ; 7: li $v0,5
+[0x00400008]        0x0000000c  syscall                         ; 8: syscall
+[0x0040000c]        0x10500009  beq $2, $16, 36 [fin-0x0040000c]; 9: beq $v0, $s0, fin
+[0x00400010]        0x00428021  addu $16, $2, $2                ; 10: addu $s0,$v0,$v0
+[0x00400014]        0x34020001  ori $2, $0, 1                   ; 11: li $v0,1
+[0x00400018]        0x00102021  addu $4, $0, $16                ; 12: move $a0, $s0
+[0x0040001c]        0x0000000c  syscall                         ; 13: syscall
+[0x00400020]        0x3402000b  ori $2, $0, 11                  ; 14: li $v0,11
+[0x00400024]        0x3404000a  ori $4, $0, 10                  ; 15: li $a0, '\n'
+[0x00400028]        0x0000000c  syscall                         ; 16: syscall
+[0x0040002c]        0x0401fff6  bgez $0 -40 [loop-0x0040002c]   ; 17: b loop
+[0x00400004]        0x34020005  ori $2, $0, 5                   ; 7: li $v0,5
+[0x00400008]        0x0000000c  syscall                         ; 8: syscall
+[0x0040000c]        0x10500009  beq $2, $16, 36 [fin-0x0040000c]; 9: beq $v0, $s0, fin
+[0x00400030]        0x3402000a  ori $2, $0, 10                  ; 19: li $v0,10
+[0x00400034]        0x0000000c  syscall                         ; 20: syscall
+Exception occurred at PC=0x00000000
+  Bad address in text read: 0x00000000
+Exception occurred at PC=0x00000000
+  Bad address in text read: 0x00000000
+Exception occurred at PC=0x00000000
+  Bad address in text read: 0x00000000
+Exception occurred at PC=0x00000000
+  Bad address in text read: 0x00000000
+SPIM Version 6.5 of January 4, 2003
+Copyright 1990-2003 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+Memory and registers have been cleared, and the simulator reinitialized.
+
+C:\Users\artsa\OneDrive - UPV\Laboratorios\2do año\labETC\p02\break.s has been successfully loaded
+SPIM Version 6.5 of January 4, 2003
+Copyright 1990-2003 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+Memory and registers have been cleared, and the simulator reinitialized.
+
+SPIM Version 6.5 of January 4, 2003
+Copyright 1990-2003 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+Memory and registers have been cleared, and the simulator reinitialized.
+
+SPIM Version 6.5 of January 4, 2003
+Copyright 1990-2003 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+Memory and registers have been cleared, and the simulator reinitialized.
+
+C:\Users\artsa\OneDrive - UPV\Laboratorios\2do año\labETC\p02\break.s has been successfully loaded
+[0x00400000]        0x34100000  ori $16, $0, 0                  ; 5: li $s0, 0
+[0x00400004]        0x34020005  ori $2, $0, 5                   ; 7: li $v0,5
+[0x00400008]        0x0000000c  syscall                         ; 8: syscall
+[0x0040000c]        0x10400009  beq $2, $0, 36 [fin-0x0040000c] ; 9: beqz $v0,fin
+[0x00400030]        0x3402000a  ori $2, $0, 10                  ; 19: li $v0,10
+[0x00400034]        0x0000000c  syscall                         ; 20: syscall
+SPIM Version 6.5 of January 4, 2003
+Copyright 1990-2003 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+Memory and registers have been cleared, and the simulator reinitialized.
+
+Load failed. Check code and simulator settings and try again.
+SPIM Version 6.5 of January 4, 2003
+Copyright 1990-2003 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+Memory and registers have been cleared, and the simulator reinitialized.
+
+C:\Users\artsa\OneDrive - UPV\Laboratorios\2do año\labETC\p02\break2.s has been successfully loaded
+SPIM Version 6.5 of January 4, 2003
+Copyright 1990-2003 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+DOS and Windows ports by David A. Carley (dac@cs.wisc.edu).
+Copyright 1997 by Morgan Kaufmann Publishers, Inc.
+See the file README for a full copyright notice.
+Memory and registers have been cleared, and the simulator reinitialized.
+
+C:\Users\artsa\OneDrive - UPV\Laboratorios\2do año\labETC\p02\break2.s has been successfully loaded
+
+
+Registers
+=========================
+ PC     = 00400000     EPC    = 00000000     Cause  = 00000000     BadVAddr= 00000000
+ Status = 00000000     HI     = 00000000     LO     = 00000000
+                                 General Registers
+R0  (r0) = 00000000  R8  (t0) = 00000000  R16 (s0) = 00000000  R24 (t8) = 00000000
+R1  (at) = 00000000  R9  (t1) = 00000000  R17 (s1) = 00000000  R25 (t9) = 00000000
+R2  (v0) = 00000000  R10 (t2) = 00000000  R18 (s2) = 00000000  R26 (k0) = 00000000
+R3  (v1) = 00000000  R11 (t3) = 00000000  R19 (s3) = 00000000  R27 (k1) = 00000000
+R4  (a0) = 00000000  R12 (t4) = 00000000  R20 (s4) = 00000000  R28 (gp) = 10008000
+R5  (a1) = 00000000  R13 (t5) = 00000000  R21 (s5) = 00000000  R29 (sp) = 7fffeffc
+R6  (a2) = 00000000  R14 (t6) = 00000000  R22 (s6) = 00000000  R30 (s8) = 00000000
+R7  (a3) = 00000000  R15 (t7) = 00000000  R23 (s7) = 00000000  R31 (ra) = 00000000
+                              Double Floating Point Registers
+FP0  = 0.000000      FP8  = 0.000000      FP16 = 0.000000      FP24 = 0.000000     
+FP2  = 0.000000      FP10 = 0.000000      FP18 = 0.000000      FP26 = 0.000000     
+FP4  = 0.000000      FP12 = 0.000000      FP20 = 0.000000      FP28 = 0.000000     
+FP6  = 0.000000      FP14 = 0.000000      FP22 = 0.000000      FP30 = 0.000000     
+                              Single Floating Point Registers
+FP0  = 0.000000      FP8  = 0.000000      FP16 = 0.000000      FP24 = 0.000000     
+FP1  = 0.000000      FP9  = 0.000000      FP17 = 0.000000      FP25 = 0.000000     
+FP2  = 0.000000      FP10 = 0.000000      FP18 = 0.000000      FP26 = 0.000000     
+FP3  = 0.000000      FP11 = 0.000000      FP19 = 0.000000      FP27 = 0.000000     
+FP4  = 0.000000      FP12 = 0.000000      FP20 = 0.000000      FP28 = 0.000000     
+FP5  = 0.000000      FP13 = 0.000000      FP21 = 0.000000      FP29 = 0.000000     
+FP6  = 0.000000      FP14 = 0.000000      FP22 = 0.000000      FP30 = 0.000000     
+FP7  = 0.000000      FP15 = 0.000000      FP23 = 0.000000      FP31 = 0.000000     
+
+
+Console
+=========================
+
+
+Text Segment
+=========================
+[0x00400000]        0x34100000  ori $16, $0, 0                  ; 5: li $s0, 0
+[0x00400004]        0x34020005  ori $2, $0, 5                   ; 7: li $v0,5
+[0x00400008]        0x0000000c  syscall                         ; 8: syscall
+[0x0040000c]        0x10400009  beq $2, $0, 36 [salto-0x0040000c]; 9: beqz $v0,salto
+[0x00400010]        0x00028021  addu $16, $0, $2                ; 10: addu $s0,$0,$v0
+[0x00400014]        0x34020001  ori $2, $0, 1                   ; 11: li $v0,1
+[0x00400018]        0x00102021  addu $4, $0, $16                ; 12: move $a0, $s0
+[0x0040001c]        0x0000000c  syscall                         ; 13: syscall
+[0x00400020]        0x3402000b  ori $2, $0, 11                  ; 14: li $v0,11
+[0x00400024]        0x3404000a  ori $4, $0, 10                  ; 15: li $a0, '\n'
+[0x00400028]        0x0000000c  syscall                         ; 16: syscall
+[0x0040002c]        0x0401fff6  bgez $0 -40 [loop-0x0040002c]   ; 17: b loop
+[0x00400030]        0x3410003d  ori $16, $0, 61                 ; 19: li $s0, '='
+[0x00400034]        0x3402000b  ori $2, $0, 11                  ; 20: li $v0, 11
+[0x00400038]        0x3402000a  ori $2, $0, 10                  ; 21: li $v0,10
+[0x0040003c]        0x0000000c  syscall                         ; 22: syscall
+
+        KERNEL
+
+
+Data Segment
+=========================
+
+        DATA
+[0x10000000]...[0x10040000]        0x00000000
+
+        STACK
+[0x7fffeffc]                        0x00000000
+
+        KERNEL DATA
+[0x90000000]...[0x90010000]        0x00000000
+
+

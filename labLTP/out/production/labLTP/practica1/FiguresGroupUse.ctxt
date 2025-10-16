@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=FiguresGroupUse
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=public\ static\ void\ main(String[]\ args)\ {\r\n\ \ \ \ \ \ \ \ FiguresGroup\ g\ \=\ new\ FiguresGroup();\r\n\ \ \ \ \ \ \ \ g.add(new\ Circle(10,\ 5,\ 3.5));\r\n\ \ \ \ \ \ \ \ g.add(new\ Triangle(10,\ 5,\ 6.5,\ 32));\r\n\ \ \ \ \ \ \ \ System.out.println(g);\r\n}
+numComments=2
