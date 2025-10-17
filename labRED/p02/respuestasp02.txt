@@ -1,0 +1,44 @@
+GET / HTTP/1.1
+Host: zoltar.redes.upv.es
+Connection: Keep-Alive
+Keep-Alive: timeout=50
+
+1.- El código "200" significa que ha habido una conexión entre
+	cliente y servidor correcta. 
+	
+2.- No, ya que netcat aún seguía activo y en modo escucha.
+	En este caso si se cierra la conexión "Connection closed by foreign host"
+	
+3.- Están todos en la misma dirección IP, pero todos redirigen a zoltar.redes.upv.es (los otros dos
+    son alias).
+    
+4.- 1) Para obtener las imágenes --> (GET /oto1.jpg HTTP/1.1 "/n" Host: zoltar.redes.upv.es)
+    2) Tiene un Head, y tres headers (2 h1 y 1 h2) junto a dos imagenes (oto1 y 2 .jpg)
+    3) Tres, dos por cada imagen y únicamente 1 para el resto de contenidos
+
+5.- No obtengo una copia ya que la web no ha cambiado, y está almacenada en caché
+
+6.- 1) Únicamente cambia lo que hemos añadido en las cabeceras
+    2) Sí, ya que se mantiene viva la conexión
+    3) 
+
+7.- 1) Utiliza HTTP 1.1
+    2) Utiliza el idioma español y el inglés de Estados unidos y es el que se lo pide al servidor (Accept-Language: es-ES,es US;q=0.9,es;q=0.8)
+    3) 10.236.14.226	158.42.180.62
+    4) Src: 10.236.14.226, Dst: 158.42.180.62
+    5) Utilizan conexiones persistentes (Keep-Alive)
+    6) Se han descargado todos los objetos, primero la barra "/" y luego las dos imagenes. Se han utilizado dos GET. Los puertos son los mismos
+    7) No, hay muchos más carácteres
+    8) Sí, ya que es lo que se descarga el navegador, y con Wireshark lo capturamos
+    9) La codificación y el idioma
+    
+8.- 1), 2), 3), 4) IGUALES QUE EJ 7
+    5) Content-Type: text/html; charset=utf-8
+    6) Sí, el mismo. Significa el tipo de codificación que se ha usado en la conexión
+    7) Se han usado 10 conexiones. Se usan conexiones no persistentes, ya que se cierran una vez se han obtenido los datos necesarios. No hay 
+    
+ 9.- 1) Sí, pero la codificación de .jpg no se puede descodificar en el terminal (con el software de eog sí)
+     2) Van en la misma trama, ya que al descargar la web entera (/) se hace de forma autoática
+     3) Se sigue un orden, esto se hace para que se sepa primero los contenidos de la web y luego se van pidiendo los objetos7
+     3) Recibo 2, una para el GET / y otra para las 2 imágenes, en ese orden
+
