@@ -1,0 +1,8 @@
+#!/bin/bash
+# info UN proceso
+pid_process=$1
+ppid=$(awk '/PPid/ {print $2}' /proc/$1/status)
+estado=$(awk '/State/ {print $2}' /proc/$1/status)
+cmd=$(tr -d '\0' </proc/$1/cmdline)
+echo "PID" $'\t' "PPID" $'\t' "STATE" $'\t' "CMD"
+echo $pid_process $'\t' $ppid $'\t' $estado $'\t' $cmd
