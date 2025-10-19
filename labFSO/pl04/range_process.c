@@ -13,7 +13,7 @@ int main(int argc, char *argv[]) {
     for (i=0; i<NPROCESOS; i++) {
         pid[i]=fork();
         if(pid[i] == 0) {
-            printf("Hijo creado en iteración=%d",i);
+            printf("Hijo creado en iteración=%d \n",i);
             exit(i);
         }
     }
