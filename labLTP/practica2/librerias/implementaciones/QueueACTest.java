@@ -14,9 +14,9 @@ import org.junit.Test;
  */
 
 public class QueueACTest {
-    
+
     QueueAC<Integer> q;
-    
+
     /**
      * Default constructor for test class qACTest
      */
@@ -30,8 +30,8 @@ public class QueueACTest {
     @Before
     public void setUp() {
         q = new QueueAC<Integer>();
-    }  
-    
+    }
+
     @Test
     public void firstTest() {
         assertEquals(q.size(), 0);
@@ -40,9 +40,9 @@ public class QueueACTest {
             assertEquals(q.first(), new Integer(0));
         }
     }
-    
+
     @Test
-    public void isEmptyTest() {   
+    public void isEmptyTest() {
         assertEquals(q.size(), 0);
         assertTrue(q.isEmpty());
         q.enqueue(new Integer(1));
@@ -50,14 +50,14 @@ public class QueueACTest {
         assertFalse(q.isEmpty());
         q.enqueue(new Integer(2));
         assertFalse(q.isEmpty());
-        q.dequeue(); 
+        q.dequeue();
         q.dequeue();
         assertTrue(q.isEmpty());
         assertEquals(q.size(), 0);
     }
-    
+
     @Test
-    public void simpleTest() {   
+    public void simpleTest() {
         assertEquals(q.size(), 0);
         q.enqueue(new Integer(1));
         assertEquals(q.size(), 1);
@@ -67,11 +67,11 @@ public class QueueACTest {
         assertEquals(q.first(), new Integer(1));
         assertEquals(q.dequeue(), new Integer(1));
         assertEquals(q.dequeue(), new Integer(2));
-        assertEquals(q.size(), 0);      
+        assertEquals(q.size(), 0);
     }
-    
+
     @Test
-    public void enqueueTest() {   
+    public void enqueueTest() {
         assertEquals(q.size(), 0);
         // sabemos que el Max es 10, asi que enqmos 15 elementos
         for (int i = 0; i < 15; i++) q.enqueue(new Integer(i));
@@ -91,9 +91,9 @@ public class QueueACTest {
         assertEquals(q.dequeue(), new Integer(12));
         assertEquals(q.dequeue(), new Integer(13));
         assertEquals(q.dequeue(), new Integer(14));
-        assertEquals(q.size(), 0); 
+        assertEquals(q.size(), 0);
     }
-    
+
     @Test
     public void dequeueTest() {
         for (int i = 0; i < 15; i++) {
@@ -103,7 +103,7 @@ public class QueueACTest {
             assertEquals(q.dequeue(), new Integer(i));
         }
     }
-   
+
     /**
      * Tears down the test fixture.
      *
