@@ -1,0 +1,52 @@
+220 serveis-rdc ESMTP Postfix (Ubuntu)
+
+EHLO [10.236.14.202]
+
+250-serveis-rdc
+250-PIPELINING
+250-SIZE 10240000
+250-VRFY
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250-SMTPUTF8
+250 CHUNKING
+
+MAIL FROM:<redes08@redes.upv.es> BODY=8BITMIME SIZE=470
+
+250 2.1.0 Ok
+
+RCPT TO:<redes08@redes.upv.es>
+
+250 2.1.5 Ok
+
+DATA
+
+354 End data with <CR><LF>.<CR><LF>
+
+Message-ID: <d0cd3f37-8b77-45b4-8580-9d5a1f5b8c79@redes.upv.es>
+Date: Fri, 7 Nov 2025 11:50:41 +0100
+MIME-Version: 1.0
+User-Agent: Mozilla Thunderbird
+Content-Language: es-ES
+To: redes08@redes.upv.es
+From: Alumno de Redes <redes08@redes.upv.es>
+Subject: PROBANDO
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 8bit
+
+Tu madre tiene una polla que ya la quisiera yo
+
+Me dio pena por tu padre el d..a que se enter..
+
+: )
+
+.
+
+250 2.0.0 Ok: queued as 68F205F8D2
+
+QUIT
+
+221 2.0.0 Bye

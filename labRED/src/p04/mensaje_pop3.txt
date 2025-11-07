@@ -1,0 +1,100 @@
++OK Hello there.
+
+CAPA
+
++OK Here's what I can do:
+STLS
+TOP
+USER
+LOGIN-DELAY 10
+PIPELINING
+UIDL
+UTF8 USER
+IMPLEMENTATION Courier Mail Server
+.
+
+USER redes08
+
++OK Password required.
+
+PASS bloqueo
+
++OK logged in.
+
+STAT
+
++OK 4 2566
+
+LIST
+
++OK POP3 clients that break here, they violate STD53.
+1 422
+2 662
+3 777
+4 705
+.
+
+UIDL
+
++OK
+1 UID6-1762505903
+2 UID7-1762505903
+3 UID8-1762505903
+4 UID9-1762505903
+.
+
+RETR 3
+
++OK 777 octets follow.
+Return-Path: <redes08@redes.upv.es>
+X-Original-To: redes08@redes.upv.es
+Delivered-To: redes08@redes.upv.es
+Received: from [10.236.14.202] (wifialu14-202.wi-fi.upv.es [10.236.14.202])
+	by serveis-rdc (Postfix) with ESMTP id 68F205F8D2
+	for <redes08@redes.upv.es>; Fri,  7 Nov 2025 11:50:38 +0100 (CET)
+Message-ID: <d0cd3f37-8b77-45b4-8580-9d5a1f5b8c79@redes.upv.es>
+Date: Fri, 7 Nov 2025 11:50:41 +0100
+MIME-Version: 1.0
+User-Agent: Mozilla Thunderbird
+Content-Language: es-ES
+To: redes08@redes.upv.es
+From: Alumno de Redes <redes08@redes.upv.es>
+Subject: PROBANDO
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 8bit
+
+Tu madre tiene una polla que ya la quisiera yo
+
+Me dio pena por tu padre el d..a que se enter..
+
+: )
+
+.
+
+RETR 4
+
++OK 705 octets follow.
+Return-Path: <redes08@redes.upv.es>
+X-Original-To: redes08@redes.upv.es
+Delivered-To: redes08@redes.upv.es
+Received: from [10.236.14.202] (wifialu14-202.wi-fi.upv.es [10.236.14.202])
+	by serveis-rdc (Postfix) with ESMTP id F31935FA31
+	for <redes08@redes.upv.es>; Fri,  7 Nov 2025 11:53:04 +0100 (CET)
+Message-ID: <4110c975-5e99-42e5-a952-ef1850bc6448@redes.upv.es>
+Date: Fri, 7 Nov 2025 11:53:08 +0100
+MIME-Version: 1.0
+User-Agent: Mozilla Thunderbird
+Content-Language: es-ES
+To: redes08@redes.upv.es
+From: Alumno de Redes <redes08@redes.upv.es>
+Subject: POP3 LOQUETE
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+FLIHASISBGLSDFHBGLJFSGHASIFH
+
+.
+
+QUIT
+
++OK Bye-bye.

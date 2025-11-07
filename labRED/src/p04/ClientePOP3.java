@@ -1,7 +1,7 @@
 import java.net.*;
 import java.io.*;
 import java.util.Scanner;
-
+/*
 public class ClientePOP3 {
 
         static void error(String cadena) {
@@ -112,4 +112,7 @@ public class ClientePOP3 {
 		System.out.println(e);
 	}
 	}
-}
+
+
+    }
+ */
