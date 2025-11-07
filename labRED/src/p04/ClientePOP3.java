@@ -1,7 +1,9 @@
+package p04;
+
 import java.net.*;
 import java.io.*;
 import java.util.Scanner;
-/*
+
 public class ClientePOP3 {
 
         static void error(String cadena) {
@@ -23,27 +25,27 @@ public class ClientePOP3 {
 
 	public static void main(String args[]) {
 	try{
-		Socket s=new Socket("serveis-rdc.redes.upv.es", **completar**);
+		Socket s=new Socket("serveis-rdc.redes.upv.es", 110);
 		System.out.println("Conectado al servidor POP3 de serveis-rdc");
 		PrintWriter salida = new PrintWriter(s.getOutputStream());
 		Scanner entrada=new Scanner(s.getInputStream());
 		String respuesta = entrada.nextLine();
 		System.out.println(respuesta);
-		if (!respuesta.startsWith("**completar**")) {error(respuesta);}
+		if (!respuesta.startsWith("+OK")) {error(respuesta);}
 
 		System.out.println("Enviando nombre de usuario");
-		salida.print("**completar**");
+		salida.print("USER redes08\r\n");
 		salida.flush();
 		respuesta = entrada.nextLine();
 		System.out.println(respuesta);
-		if (!respuesta.startsWith("**completar**")) {error(respuesta);}
+		if (!respuesta.startsWith("+OK")) {error(respuesta);}
 
 		System.out.println("Enviando password");
-		salida.print("**completar**");
+		salida.print("PASS bloqueo\r\n");
 		salida.flush();
 		respuesta = entrada.nextLine();
 		System.out.println(respuesta);
-		if (!respuesta.startsWith("**completar**")) {error(respuesta);}
+		if (!respuesta.startsWith("+OK")) {error(respuesta);}
 
 		Scanner teclado = new Scanner(System.in);
 		Boolean continuar = true;
@@ -54,44 +56,44 @@ public class ClientePOP3 {
 			PrintMenu();
 			int orden = teclado.nextInt();
 			switch (orden) {
-            			case 1: salida.print("**completar**");
+            			case 1: salida.print("LIST\r\n");
 					salida.flush();
 					respuesta = entrada.nextLine();
-					// Aqui hace falta un bucle while para leer 
-					//todas las lineas de la respuesta 
-					while (**completar**) {
-						// **completar** 
-						// Aqui se leen 
-						//todas las lineas de la respuesta 
+					// Aqui hace falta un bucle while para leer
+					//todas las lineas de la respuesta
+					while (!respuesta.equals(".")) {
+						respuesta = entrada.nextLine();
+                        System.out.println(respuesta);
+						// Aqui se leen
+						//todas las lineas de la respuesta
 					}
 					break;
 				case 2: System.out.println("Elige numero de correo a leer: ");
 					numero = teclado.nextInt();
-					salida.print(**completar**);
+					salida.print("RETR " + numero + "\r\n");
 					salida.flush();
 					respuesta = entrada.nextLine();
 					System.out.println(respuesta);
 					if (respuesta.startsWith("+OK")) {
-						// Aqui hace falta un bucle while para leer 
-						//todas las lineas de la respuesta 
-						while (**completar**) {
-							// **completar** 
-							// Aqui se leen 
-							//todas las lineas de la respuesta 
+						// Aqui hace falta un bucle while para leer
+						//todas las lineas de la respuesta
+						while (!respuesta.equals(".")) {
+                        respuesta = entrada.nextLine();
+                        System.out.println(respuesta);
 						}
 					}
 					break;
 				case 3: System.out.println("Elige numero de correo a borrar");
 					numero = teclado.nextInt();
-					salida.print(**completar**);
+					salida.print("DELE" + numero + "\r\n");
 					salida.flush();
 					System.out.println(entrada.nextLine());
 					break;
-				case 4: salida.print(**completar**);
+				case 4: salida.print("RSET\r\n");
 					salida.flush();
 					System.out.println(entrada.nextLine());
 					break;
-				case 5: salida.printl(**completar**);
+				case 5: salida.print("QUIT\r\n");
 					salida.flush();
 					System.out.println(entrada.nextLine());
 					continuar = false;
@@ -112,7 +114,4 @@ public class ClientePOP3 {
 		System.out.println(e);
 	}
 	}
-
-
-    }
- */
+}

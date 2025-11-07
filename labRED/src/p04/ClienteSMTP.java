@@ -47,9 +47,10 @@ public class ClienteSMTP {
 
         salida.print("To: redes08@redes.upv.es\r\n" +
                 "From: redes08@redes.upv.es\r\n" +
-                "Subject: El asunto del correo\r\n" +
-                "BOMBARDEEN LA UV\r\n" +
+                "Subject: Asunto Correo\r\n" +
+                "Holi :)\r\n" +
                 ".\r\n");
+
 		salida.flush();
 		respuesta = entrada.nextLine();
 		System.out.println(respuesta);
