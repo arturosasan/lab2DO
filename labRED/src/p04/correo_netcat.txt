@@ -1,0 +1,22 @@
+nc serveis-rdc.redes.upv.es 25
+220 serveis-rdc ESMTP Postfix (Ubuntu)
+HELO upv.es
+250 serveis-rdc
+MAIL FROM: redes08@redes.upv.es
+250 2.1.0 Ok
+
+500 5.5.2 Error: bad syntax
+RCPT TO: redes08@redes.upv.es
+250 2.1.5 Ok
+DATA
+354 End data with <CR><LF>.<CR><LF>
+To: redes08@redes.upv.es
+From: redes08@redes.upv.es
+Subject: El asunto del correo
+
+Hola, Buenas tardes loquete
+Saludos
+.
+250 2.0.0 Ok: queued as E969E5FA31
+QUIT
+221 2.0.0 Bye
