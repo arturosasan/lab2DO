@@ -49,8 +49,8 @@ sudo apt update
 sudo apt install git
 ```
 
-> Si utilizas otra distribución, lo más seguro es que no necesites una guía
-> adicional (I use arch btw).
+> Si utilizas otra distribución, lo más seguro es que no necesites que
+> te explique como usar Git (I use arch btw).
 
 ### 🍎 En macOS
 
