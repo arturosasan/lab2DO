@@ -67,10 +67,12 @@ tu ordenador:
 
 1. Abre una terminal o consola.
 2. Escribe el siguiente comando:
+
    ```bash
    git clone https://github.com/arturosasan/lab2DO
    ```
 3. Entra en la carpeta descargada:
+
    ```bash
    cd lab2DO
    ```
