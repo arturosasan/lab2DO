@@ -20,7 +20,7 @@ public class TestExamenLabRED {
             System.out.println(respuesta);
 
             // ID "ESPACIO" "****"
-            salida.print("ID TU DNI\r\n");
+            salida.print("ID \r\n");
             salida.flush();
             respuesta = entrada.nextLine();
 
@@ -47,7 +47,7 @@ public class TestExamenLabRED {
                     if (respuesta.startsWith("=")) {
                         respuesta = entrada.nextLine();
                         System.out.println(respuesta);
-                        int contador = 0;
+                        int contador = 1;
                         while ((respuesta = entrada.nextLine()) != null) {
                             // Si la línea está vacía, terminamos
                             if (respuesta.isEmpty()) {
@@ -59,7 +59,7 @@ public class TestExamenLabRED {
                             }
                         }
                         System.out.println("RES2 "+ contador);
-                        salida.print("RES " + contador + "\r\n");
+                        salida.print("RES2 " + contador + "\r\n");
                         salida.flush();
                         respuesta = entrada.nextLine();
                     }
