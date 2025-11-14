@@ -24,7 +24,7 @@ public class TestExamenLabRED {
 
             // COMPRUEBO QUE TODO OK
             String line = entrada.nextLine();
-            System.out.println(line);
+            System.out.println("[SERVIDOR] "+line);
 
             // PIDO DNI 
             System.out.print("Introduce tu DNI/NIE (sin letra y sin ID): ");
@@ -66,7 +66,6 @@ public class TestExamenLabRED {
             teclado.close();
             salida.close();
             entrada.close();
-
         }
     }
 
@@ -75,7 +74,6 @@ public class TestExamenLabRED {
         String valaux = entrada.nextLine();
         System.out.println("[SERVIDOR] " + valaux);
 
-
         String num1S = entrada.nextLine();
         System.out.println("[SERVIDOR] " + num1S);
         int num1 = Integer.parseInt(num1S);
@@ -83,7 +81,6 @@ public class TestExamenLabRED {
         String num2S = entrada.nextLine();
         System.out.println("[SERVIDOR] " + num2S);
         int num2 = Integer.parseInt(num2S);
-
 
         int suma = num1 + num2;
 
@@ -132,11 +129,9 @@ public class TestExamenLabRED {
                 enviarMensaje(salida, "RES3 " + numero);
             }
 
-
-
             if (entrada.hasNextLine()) {
                 String respuesta = entrada.nextLine();
-                System.out.println(respuesta);
+                System.out.println("[SERVIDOR] " + respuesta);
             }
 
 
