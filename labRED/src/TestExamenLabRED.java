@@ -123,19 +123,25 @@ public class TestExamenLabRED {
 
             if (comando.equals("MAYOR")) {
                 numero = 6; // Cualquier número mayor que 5
+                enviarMensaje(salida, "RES3 " + numero);
             } else if (comando.equals("MENOR")) {
                 numero = 4; // Cualquier número menor que 5
+                enviarMensaje(salida, "RES3 " + numero);
             } else if (comando.equals("IGUAL")) {
                 numero = 5; // Exactamente 5
+                enviarMensaje(salida, "RES3 " + numero);
             }
 
-            enviarMensaje(salida, "RES3 " + numero);
+
 
             if (entrada.hasNextLine()) {
                 String respuesta = entrada.nextLine();
                 System.out.println(respuesta);
             }
+
+
         }
+        enviarMensaje(salida, "SALIR");
     }
 
     // FUNCIÓN AUX PARA VER LO QUE SE ENVÍA AL SERVIDOR Y PARA NO PONER "\r\n" TODO EL P*** RATO
