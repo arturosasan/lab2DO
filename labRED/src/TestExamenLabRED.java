@@ -24,7 +24,7 @@ public class TestExamenLabRED {
 
             // COMPRUEBO QUE TODO OK
             String line = entrada.nextLine();
-            System.out.println("[SERVIDOR] "+line);
+            System.out.println("[SERVIDOR] " + line);
 
             // PIDO DNI 
             System.out.print("Introduce tu DNI/NIE (sin letra y sin ID): ");
@@ -32,10 +32,6 @@ public class TestExamenLabRED {
 
             // ENVÍO ID + DNI
             enviarMensaje(salida, "ID " + dni);
-
-            // LEO 
-            line = entrada.nextLine();
-            System.out.println("[SERVIDOR] " + line);
 
             // BUCLE PARA SALTAR A CADA EJERCICIO
             while (entrada.hasNextLine()) {
@@ -57,7 +53,6 @@ public class TestExamenLabRED {
                     EJ3(entrada, salida);
                 }
             }
-
             System.out.println("\nExamen completado.");
 
         } catch (IOException e) {
@@ -70,7 +65,6 @@ public class TestExamenLabRED {
     }
 
     private static void EJ1(Scanner entrada, PrintWriter salida) {
-        // SI NO LO HAGO ASÍ NO ME ESCRIBE BIEN EL ENUNCIADO (??)
         String valaux = entrada.nextLine();
         System.out.println("[SERVIDOR] " + valaux);
 
@@ -101,7 +95,6 @@ public class TestExamenLabRED {
 
             contador++;
         }
-
         enviarMensaje(salida, "RES2 " + contador);
     }
 
@@ -110,31 +103,24 @@ public class TestExamenLabRED {
 
         while (entrada.hasNextLine()) {
             comando = entrada.nextLine();
-            System.out.println(comando);
+            System.out.println("[SERVIDOR] "+comando);
 
             if (comando.equals("SALIR")) {
                 break;
             }
 
-            int numero = 5; // Valor por defecto
-
             if (comando.equals("MAYOR")) {
-                numero = 6; // Cualquier número mayor que 5
-                enviarMensaje(salida, "RES3 " + numero);
+                enviarMensaje(salida, "RES3 " + 6);
             } else if (comando.equals("MENOR")) {
-                numero = 4; // Cualquier número menor que 5
-                enviarMensaje(salida, "RES3 " + numero);
+                enviarMensaje(salida, "RES3 " + 4);
             } else if (comando.equals("IGUAL")) {
-                numero = 5; // Exactamente 5
-                enviarMensaje(salida, "RES3 " + numero);
+                enviarMensaje(salida, "RES3 " + 5);
             }
 
             if (entrada.hasNextLine()) {
                 String respuesta = entrada.nextLine();
                 System.out.println("[SERVIDOR] " + respuesta);
             }
-
-
         }
         enviarMensaje(salida, "SALIR");
     }
