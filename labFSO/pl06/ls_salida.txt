@@ -1,0 +1,22 @@
+total 840
+drwxr-xr-x 1 arturosasan arturosasan    474 nov 20 11:33 .
+drwxr-xr-x 1 arturosasan arturosasan     78 nov 18 11:41 ..
+-rw-r--r-- 1 arturosasan arturosasan   1399 nov 18 11:42 a_pipe.c
+-rwxr-xr-x 1 arturosasan arturosasan  15856 nov 20 11:33 cat_redir
+-rw-r--r-- 1 arturosasan arturosasan    669 nov 20 11:33 cat_redir.c
+-rwxr-xr-x 1 arturosasan arturosasan  15616 nov 18 11:43 descriptor
+-rw-r--r-- 1 arturosasan arturosasan    588 nov 18 11:41 descriptor.c
+-rwxr-xr-x 1 arturosasan arturosasan  15528 nov 18 11:52 descriptor_out
+-rw-r--r-- 1 arturosasan arturosasan    780 nov 20 10:35 descriptor_output.c
+-rwxr-xr-x 1 arturosasan arturosasan  15856 nov 20 11:29 ls_redir
+-rw-r--r-- 1 arturosasan arturosasan    667 nov 20 11:29 ls_redir.c
+-rw-r--r-- 1 arturosasan arturosasan      0 nov 20 11:34 ls_salida.txt
+-rwx------ 1 arturosasan arturosasan     47 nov 20 10:48 messages.txt
+-rwx------ 1 arturosasan arturosasan   1332 nov 20 11:30 output.txt
+-rw-r--r-- 1 arturosasan arturosasan 524181 nov 18 11:42 PL06_Castellano.pdf
+-rw-r--r-- 1 arturosasan arturosasan 142760 nov 18 11:42 PL06_Cuestiones.pdf
+-rw-r--r-- 1 arturosasan arturosasan  55761 nov 18 12:37 PL06_Cuestionesssss.pdf
+-rwxr-xr-x 1 arturosasan arturosasan  15808 nov 20 11:07 redir_out
+-rw-r--r-- 1 arturosasan arturosasan    622 nov 20 11:00 redir_output.c
+-rwxr-xr-x 1 arturosasan arturosasan  15720 nov 20 10:47 share
+-rw-r--r-- 1 arturosasan arturosasan    735 nov 20 10:47 share_file.c
