@@ -9,38 +9,26 @@ public class ServidorHTTP {
     private static final String CRLF = "\r\n";
 
     public static void main(String args[]) throws IOException {
-        PrintWriter envia = null;
-        Socket s = null;
-        ServerSocket ss = null;
-        Scanner recibe = null;
+        ServerSocket ss = new ServerSocket(8080);
         String res = "";
-        try {
-            ss = new ServerSocket(8080);
-            while (true) {
-                s = ss.accept(); // espera un cliente
-                System.out.println("Se ha conectado un cliente al servidor");
+        while (true) {
+            Socket s = ss.accept();
 
-                envia = new PrintWriter(s.getOutputStream(), true);
-                recibe = new Scanner(s.getInputStream());
+            Scanner sc = new Scanner(s.getInputStream());
+            PrintWriter pw = new PrintWriter(s.getOutputStream(), true);
+            String respuesta = sc.nextLine();
 
-               String entrada = "a";
+            while (respuesta.length() > 0) {
+                res += respuesta + CRLF;
+                respuesta = sc.nextLine();
+            }
 
-                while (entrada.length() > 0) {
-                    String respuesta = recibe.nextLine();
-                    res += respuesta + CRLF;
-                    if (res.length() == 0) break;
-                }
+                pw.printf("HTTP/1.0 200 OK\r\n");
+                pw.printf("Content-Type: text/plan\r\n");
+                pw.printf("\r\n");
+                pw.printf(res);
 
-                envia.print("HTTP/1.0 200 OK\r\n");
-                envia.print("Content-Type: text/plan\r\n");
-                envia.print("\r\n");
-                envia.print(res);
                 s.close();
             }
-        } finally {
-            envia.close();
-            ss.close();
-            recibe.close();
-        }
     }
 }
