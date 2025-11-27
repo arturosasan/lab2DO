@@ -28,7 +28,7 @@ __start:        la $a0, reloj
 				# FIN EJERCICIO 1
 				
 				
-                # EJERCICIO 2
+        # EJERCICIO 2
 				# jal inicializa_reloj
 				# jal devuelve_reloj_en_s_sd
 				# jal imprime_s
@@ -36,7 +36,7 @@ __start:        la $a0, reloj
 
 				# EJERCICIO 3
 				# jal inicializa_reloj
-				# jal devuelve_reloj_en_s_sd
+				# jal devuelve_reloj_en_s_srd
 				# jal imprime_s
 				# FIN EJERCICIO 3
 				
@@ -218,10 +218,53 @@ devuelve_reloj_en_s_sd:
 pasa_segundo:
 
 				lbu $t0, 0($a0)         # $t0 = SS
-                addiu $t0, $t0, 1       # $t0 = SS++
-                li $t1, 60
-                beq $t0, $t1, S60       # Si SS==60 se pone SS a cero
-                sb $t0, 2($a0)          # Escribe SS++
-                j fin_pasa_hora
-S60:            sb $zero, 0($a0)        # Escribe SS a 0
-fin_pasa_segundo:  jr $ra
+        addiu $t0, $t0, 1       # $t0 = SS++
+        li $t1, 60
+        beq $t0, $t1, S60       # Si SS==60 se pone SS a cero
+        sb $t0, 2($a0)          # Escribe SS++
+        j fin_pasa_segundo
+
+S60:    sb $zero, 0($a0)        # Escribe SS a 0
+        lbu $t0,1($a0)
+        addiu $t0,$t0, 1
+        li $t1,60
+        beq $t0,$t1,M60
+        sb $t0,1($a0)
+        j fin_pasa_segundo
+
+M60:    sb $zero, 1($a0)
+        lbu $t0, 2($a0)
+        addiu $t0, $t0, 1
+        li $t1, 24
+        beq $t0,$t1,H24
+        sb $t0, 2($a0)
+        j fin_pasa_segundo
+
+H24:    sb $zero, 2($a0)
+
+fin_pasa_segundo:        jr $ra
+
+devuelve_reloj_en_s_srd: 
+
+        lbu $t0, 2($a0)
+        
+        sll $v0,$t0,12
+        sll $t1,$t0,9
+        subu $v0,$v0,$t1
+
+        sll $t1,$t0,5
+        addu $v0,$v0,$t1
+        sll $t1,$t0,4
+        subu $v0,$v0,$t1
+
+        lbu $t0, 1($a1)
+
+        sll $t1,$t0,6
+        sll $t2,$t0,2
+        subu $t1,$t1,$t2
+        addu $v0,$v0,$t1
+
+        lbu $t0,0($a0)
+        addu $v0,$v0,$t0
+
+        jr $ra
