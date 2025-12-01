@@ -12,7 +12,7 @@ public class Cliente extends Thread{
     }
 
     public static void main (String[] args) throws IOException {
-        Socket s = new Socket("158.42.180.23",7800);
+        Socket s = new Socket("localhost",7800);
         System.out.println("CONECTADO");
 
         Scanner sc = new Scanner(s.getInputStream());
