@@ -8,9 +8,11 @@ public class dnslookup {
     public static void main (String[] args) {
         try {
             InetAddress ipServer = InetAddress.getByName("www.eltiempo.es");
-            System.out.printf("Host\t\t/ IP \n" + ipServer.toString());
             // POR TERMINAL
-            // InetAddress ipServer = InetAddress.getByName(args[0]);
+            //InetAddress ipServer = InetAddress.getByName(args[0]);
+            System.out.printf("Host\t\t/ IP \n" + ipServer.toString());
+
+
         } catch (UnknownHostException e) {
             System.err.println(e);
         }
