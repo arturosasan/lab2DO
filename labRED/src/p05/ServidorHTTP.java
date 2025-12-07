@@ -4,7 +4,6 @@ import java.util.Scanner;
 import java.io.*;
 import java.net.*;
 
-
 public class ServidorHTTP {
     private static final String CRLF = "\r\n";
 
