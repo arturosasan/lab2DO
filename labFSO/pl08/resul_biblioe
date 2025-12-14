@@ -1,0 +1,27 @@
+Process PID: 420636
+
+main function address: 0x804aff4 
+f function address: 0x804afc5 
+Initialiazed global variable i_glob address: 0x80ef008
+Non initialized global variable ni_glob address 
+ 1st ni_glob element address: 0x80eff40
+ Last ni_glob element address: 0x80f0f3f
+Initialized local variable i_loc address: 0xffa21460
+Non initialized local variable ni_loc address: 0xffa21464
+Address of funcion f parameter: 0xffa21450
+The mathematical operation result is: 0.707107
+
+ PROCESS MEMORY MAP /proc/420636/maps 
+08048000-08049000 r--p 00000000 00:1b 2250084                            /home/arturosasan/lab2DO/labFSO/pl08/biblio_estatica
+08049000-080bb000 r-xp 00001000 00:1b 2250084                            /home/arturosasan/lab2DO/labFSO/pl08/biblio_estatica
+080bb000-080ec000 r--p 00073000 00:1b 2250084                            /home/arturosasan/lab2DO/labFSO/pl08/biblio_estatica
+080ec000-080ef000 r--p 000a4000 00:1b 2250084                            /home/arturosasan/lab2DO/labFSO/pl08/biblio_estatica
+080ef000-080f0000 rw-p 000a7000 00:1b 2250084                            /home/arturosasan/lab2DO/labFSO/pl08/biblio_estatica
+080f0000-080f4000 rw-p 00000000 00:00 0 
+08868000-0888a000 rw-p 00000000 00:00 0                                  [heap]
+f7f5c000-f7f60000 r--p 00000000 00:00 0                                  [vvar]
+f7f60000-f7f62000 r--p 00000000 00:00 0                                  [vvar_vclock]
+f7f62000-f7f65000 r-xp 00000000 00:00 0                                  [vdso]
+ffa01000-ffa23000 rw-p 00000000 00:00 0                                  [stack]
+ ---------------
+
