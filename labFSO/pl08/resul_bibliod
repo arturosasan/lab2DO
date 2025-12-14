@@ -1,0 +1,50 @@
+Process PID: 422570
+
+main function address: 0x566211fc 
+f function address: 0x566211cd 
+Initialiazed global variable i_glob address: 0x56624024
+Non initialized global variable ni_glob address 
+ 1st ni_glob element address: 0x566240c0
+ Last ni_glob element address: 0x566250bf
+Initialized local variable i_loc address: 0xffb2dc10
+Non initialized local variable ni_loc address: 0xffb2dc14
+Address of funcion f parameter: 0xffb2dc00
+The mathematical operation result is: 0.707107
+
+ PROCESS MEMORY MAP /proc/422570/maps 
+56620000-56621000 r--p 00000000 00:1b 2250090                            /home/arturosasan/lab2DO/labFSO/pl08/biblio_dinamica
+56621000-56622000 r-xp 00001000 00:1b 2250090                            /home/arturosasan/lab2DO/labFSO/pl08/biblio_dinamica
+56622000-56623000 r--p 00002000 00:1b 2250090                            /home/arturosasan/lab2DO/labFSO/pl08/biblio_dinamica
+56623000-56624000 r--p 00002000 00:1b 2250090                            /home/arturosasan/lab2DO/labFSO/pl08/biblio_dinamica
+56624000-56625000 rw-p 00003000 00:1b 2250090                            /home/arturosasan/lab2DO/labFSO/pl08/biblio_dinamica
+56625000-56626000 rw-p 00000000 00:00 0 
+58545000-58568000 rw-p 00000000 00:00 0                                  [heap]
+f7be1000-f7be3000 rw-p 00000000 00:00 0 
+f7be3000-f7c02000 r--p 00000000 00:1b 927658                             /usr/lib32/libc.so.6
+f7c02000-f7d94000 r-xp 0001f000 00:1b 927658                             /usr/lib32/libc.so.6
+f7d94000-f7e0d000 r--p 001b1000 00:1b 927658                             /usr/lib32/libc.so.6
+f7e0d000-f7e0f000 r--p 00229000 00:1b 927658                             /usr/lib32/libc.so.6
+f7e0f000-f7e10000 rw-p 0022b000 00:1b 927658                             /usr/lib32/libc.so.6
+f7e10000-f7e15000 rw-p 00000000 00:00 0 
+f7e15000-f7e18000 r--p 00000000 00:1b 927705                             /usr/lib32/libgcc_s.so.1
+f7e18000-f7e42000 r-xp 00003000 00:1b 927705                             /usr/lib32/libgcc_s.so.1
+f7e42000-f7e47000 r--p 0002d000 00:1b 927705                             /usr/lib32/libgcc_s.so.1
+f7e47000-f7e48000 r--p 00031000 00:1b 927705                             /usr/lib32/libgcc_s.so.1
+f7e48000-f7e49000 rw-p 00032000 00:1b 927705                             /usr/lib32/libgcc_s.so.1
+f7e49000-f7e55000 r--p 00000000 00:1b 927667                             /usr/lib32/libm.so.6
+f7e55000-f7ef4000 r-xp 0000c000 00:1b 927667                             /usr/lib32/libm.so.6
+f7ef4000-f7f32000 r--p 000ab000 00:1b 927667                             /usr/lib32/libm.so.6
+f7f32000-f7f33000 r--p 000e8000 00:1b 927667                             /usr/lib32/libm.so.6
+f7f33000-f7f34000 rw-p 000e9000 00:1b 927667                             /usr/lib32/libm.so.6
+f7f60000-f7f62000 rw-p 00000000 00:00 0 
+f7f62000-f7f66000 r--p 00000000 00:00 0                                  [vvar]
+f7f66000-f7f68000 r--p 00000000 00:00 0                                  [vvar_vclock]
+f7f68000-f7f6b000 r-xp 00000000 00:00 0                                  [vdso]
+f7f6b000-f7f6c000 r--p 00000000 00:1b 927649                             /usr/lib32/ld-linux.so.2
+f7f6c000-f7f91000 r-xp 00001000 00:1b 927649                             /usr/lib32/ld-linux.so.2
+f7f91000-f7fa0000 r--p 00026000 00:1b 927649                             /usr/lib32/ld-linux.so.2
+f7fa0000-f7fa2000 r--p 00034000 00:1b 927649                             /usr/lib32/ld-linux.so.2
+f7fa2000-f7fa3000 rw-p 00036000 00:1b 927649                             /usr/lib32/ld-linux.so.2
+ffb0e000-ffb30000 rw-p 00000000 00:00 0                                  [stack]
+ ---------------
+
