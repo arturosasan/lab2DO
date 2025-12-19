@@ -1,0 +1,74 @@
+EJERCICIO 2
+
+1.- Es el primero ya que es a donde lanza la petición el programa. Será otra vez el 1, ya que lanza una petición independiente gracias a los parámetros random de TLS
+
+
+2.-  Es abrubto, el servidor nos tira por timeout
+
+3.- Si, aquí necesitamos mas datos y que el servidor nos acepte garantizando ciertos parámetros de seguridad de TLS
+
+
+EJERCICIO 3
+
+a).- La 1.2
+
+b).- Si, es el ca9cbaa2cc22368897244bcb97e67228b17695c5c15221b2c08f2762b771f058. Soporta 31 cipher suites y 1 método de compresión.
+
+c).- Soporta 297 versiones de TLS
+
+EJERCICIO 4
+
+Sí que coinciden los mismos algoritmos con los empleados con ClientHello
+
+EJERCICIO 5
+
+issuer: rdnSequence (0)
+    rdnSequence: 3 items (id-at-commonName=GEANT TLS RSA 1,id-at-organizationName=Hellenic Academic and Research Institutions CA,id-at-countryName=GR)
+        RDNSequence item: 1 item (id-at-countryName=GR)
+            RelativeDistinguishedName item (id-at-countryName=GR)
+                Object Id: 2.5.4.6 (id-at-countryName)
+                CountryName: GR
+        RDNSequence item: 1 item (id-at-organizationName=Hellenic Academic and Research Institutions CA)
+            RelativeDistinguishedName item (id-at-organizationName=Hellenic Academic and Research Institutions CA)
+                Object Id: 2.5.4.10 (id-at-organizationName)
+                DirectoryString: uTF8String (4)
+                    uTF8String: Hellenic Academic and Research Institutions CA
+        RDNSequence item: 1 item (id-at-commonName=GEANT TLS RSA 1)
+            RelativeDistinguishedName item (id-at-commonName=GEANT TLS RSA 1)
+                Object Id: 2.5.4.3 (id-at-commonName)
+                DirectoryString: uTF8String (4)
+                    uTF8String: GEANT TLS RSA 1
+
+signature: Algorithm Id: 1.2.840.113549.1.1.11 (sha256WithRSAEncryption)
+
+validity:
+    notBefore: utcTime (0)
+        utcTime: 2025-10-17 12:32:21 (UTC)
+    notAfter: utcTime (0)
+        utcTime: 2026-10-17 12:32:21 (UTC)
+
+
+EJERCICIO 6 
+
+No pide que el cliente se identifique con su Certificado Digital, ya que no hay un mensaje / segmento en el paquete capturado por WS que lo indique
+
+CLAVE PÚBLICA DE SERVER KEY EXCHANGE: 0401b887eec5239cecc22d49f8aaedc7aeb807a39d1df22e295169b16eac518815b55b8edbb0c02726ed0ae45b29820d588cfe69cb96dec34af15510bd55c0a65e
+
+CLAVE PÚBLICA DE CLIENT KEY EXCHANGE: 
+0406821d154eb0676ee12fd9cc4afb7684f0236587494694956191ed67c2b539a96026abff5040fb78e265394402301db02dcbdcabfbc2482faf4be9d35e734a75
+
+
+Signature Algorithm: rsa_pkcs1_sha512 (0x0601)
+    Signature Hash Algorithm Hash: SHA512 (6)
+    Signature Hash Algorithm Signature: RSA (1)
+
+
+EJERCICIO 7 
+
+Sí que se corresponde con un segmento TCP por registro ya que se pueden ver las secuencias ACK en cada envío entre cliente y servidor. Se repite el valor de la longuitud de la respuesta enviada por el servidor donde indica el nº de secuencia que ha aceptado. 
+
+Se trata de un cierre consensuado, ya que una vez que el cliente ha aceptado todas las secuencias (ya tiene todo el contenido que ha solicitado) es el servidor el que cierra la conexión y el cliente la acepta.
+
+EJERCICIO 8
+
+TODO OK
