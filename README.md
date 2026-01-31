@@ -23,7 +23,7 @@ de código y prácticas. 🙌
 > Puedes consultarlo libremente, descargarlo o usarlo como referencia. 😊
 >  
 > El repositorio se va actualizando cada vez que realizo una práctica; hago
-> los commits con "**DÍA/MES**" para indicar cuándo actualizo el repositorio.
+> los commits con el número de la práctica que esta hecha hasta ese momento para indicar cuándo actualizo el repositorio.
 
 ---
 
