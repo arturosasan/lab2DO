@@ -17,7 +17,7 @@ import estructuras.implementaciones.LEGListaConPI;
     Utiliza para ello únicamente los métodos existentes en el modelo ListaConPI
  */
 
-public class LEGListaConPIExt<E> extends LEGListaConPI<E> {
+public class LEGListaConPIExt<E> extends LEGListaConPI<E> extends Thread {
 
     public void buscar(E x) {
         inicio();
