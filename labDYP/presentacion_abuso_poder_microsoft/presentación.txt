@@ -1,0 +1,167 @@
+🖥️ Diapositiva 1: Portada
+
+Título:
+El abuso de poder desde una posición de ventaja:
+Microsoft, Windows y el dominio del mercado
+
+Subtítulo:
+Análisis deontológico y profesional
+
+Notas:
+Presentar el tema general, explicar que abordaremos no solo datos duros sino también reflexiones éticas.
+
+🧠 Diapositiva 2: Introducción – ¿De qué trata?
+
+Contenido:
+
+Microsoft es una de las empresas tecnológicas más influyentes del mundo.
+
+Windows domina el mercado de sistemas operativos para PC.
+
+Frase clave del profesor:
+“El abuso de poder desde una posición de ventaja.”
+
+La presentación explorará este concepto aplicado al caso de Microsoft.
+
+Notas:
+Conecta inmediatamente la frase de tu profesor con el contenido de la presentación.
+
+📊 Diapositiva 3: Dominio de mercado de Windows
+
+Contenido:
+
+Windows ha mantenido cuotas de mercado superiores al 70 % en escritorios PC durante años.
+
+Esta gran presencia le da a Microsoft una posición de poder muy fuerte sobre la competencia y usuarios.
+
+Notas:
+Explica que una posición de dominancia también conlleva responsabilidad ética y profesional.
+
+(puedes añadir un gráfico de pastel con cuotas de mercado)
+
+🧾 Diapositiva 4: Caso antimonopolio en EE. UU. (1998–2001)
+
+Contenido:
+
+El Departamento de Justicia de EE. UU. demandó a Microsoft por monopolio.
+
+Se concluyó que Microsoft abusó de su posición dominante para restringir la competencia (p. ej., mediante la integración de productos).
+
+Aunque la orden de dividir la empresa se revirtió, el caso marcó un precedente legal y ético.
+
+Notas:
+Relaciona este caso con violaciones éticas potenciales de abuso de poder.
+
+🇪🇺 Diapositiva 5: Sanciones en la Unión Europea
+
+Contenido:
+
+La Comisión Europea multó a Microsoft por prácticas que impedían la competencia leal.
+
+Se exigió que ofreciera versiones de Windows sin software preinstalado y compartiera información técnica para interoperar con competidores.
+
+Notas:
+Enfocar en la dimensión legal y su conexión con confianza del consumidor.
+
+🔌 Diapositiva 6: Integración de productos y prácticas controvertidas
+
+Contenido:
+
+Microsoft integró productos como navegadores o reproductores dentro de Windows, dificultando la competencia.
+
+Esto puede considerarse una utilización del poder de mercado para favorecer sus propios productos.
+
+Notas:
+Relacionar este comportamiento con la frase de tu profesor.
+
+📉 Diapositiva 7: Efectos sobre la competencia
+
+Contenido:
+
+Reducida libertad de elección del consumidor.
+
+Barreras para que software alternativo gane tracción.
+
+Menor innovación en ecosistemas cerrados.
+
+Notas:
+Refuerza que efectos técnicos pueden tener implicaciones éticas.
+
+🧠 Diapositiva 8: Problemas recientes de actualizaciones de Windows
+
+Contenido:
+
+Algunas actualizaciones de Windows 11 de 2025 causaron fallos graves, incluyendo corrupción o inaccesibilidad de unidades SSD, reportado por usuarios y técnicos.
+
+Parches como KB5063878 en agosto de 2025 llevaron a reportes de unidades que dejaban de funcionar o datos perdidos.
+
+Otras actualizaciones provocaron errores de recuperación o fallos en herramientas como “Restablecer este equipo”.
+
+Notas:
+Explicar que estos problemas generan frustración entre usuarios y cuestionamientos sobre prácticas de desarrollo y pruebas.
+
+🤖 Diapositiva 9: IA en Windows – recall y agentic OS
+
+Contenido:
+
+Microsoft ha avanzado hacia un Windows con más funciones de IA (a veces descrito como agentic OS).
+
+La función Recall de IA, que toma capturas regulares de la actividad del usuario, recibió fuerte crítica por potenciales riesgos de privacidad y seguridad.
+
+Algunos reportes indican que Microsoft ha reconsiderado el enfoque agresivo de IA tras la reacción negativa de usuarios y especialistas.
+
+Notas:
+Presentar esto desde la perspectiva de deontología: ¿Se respetan la privacidad y el consentimiento del usuario?
+
+📌 Diapositiva 10: Reflexión ética I
+
+Contenido:
+
+¿Es ético que Microsoft integre IA profunda y funciones invasivas sin una clara demanda por parte de la mayoría de usuarios?
+
+¿Poner la innovación técnica por encima de estabilidad y control del usuario es profesionalmente responsable?
+
+Notas:
+Iniciar debate entre compañeros sobre prioridades éticas en ingeniería de software.
+
+📌 Diapositiva 11: Reflexión ética II
+
+Contenido:
+
+Cuando una empresa tiene poder dominante, ¿tiene mayor obligación de actuar con responsabilidad?
+
+Casos como errores graves en actualizaciones y funciones de IA invasivas pueden verse como abuso de poder desde una posición de ventaja.
+
+Notas:
+Guía para discusión en clase.
+
+📌 Diapositiva 12: Conclusión
+
+Contenido:
+
+El dominio de Microsoft en sistemas operativos ha generado ventajas económicas y tecnológicos.
+
+Sin embargo, también existe un debate ético importante sobre el uso de ese poder, especialmente cuando decisiones técnicas afectan negativamente a usuarios o privacidad.
+
+La frase del profesor resume bien este enfoque:
+👉 “El abuso de poder desde una posición de ventaja.”
+
+Notas:
+Cierra con una invitación a debatir y reflexionar críticamente.
+
+📚 Diapositiva 13: Fuentes fiables
+
+Contenido (ejemplos, inserta enlaces donde los pegues):
+
+Estadísticas de cuota de mercado de Windows (Wikipedia o fuentes de análisis de mercado).
+
+Caso antimonopolio EE. UU. y sanciones UE (documentación legal y noticias).
+
+Documentación oficial de Microsoft sobre problemas de actualizaciones y release health.
+
+Artículos sobre Recall y debate de la comunidad.
+
+Noticias recientes sobre reconsideración de IA en Windows 11.
+
+Notas:
+Recomienda citar enlaces directamente en la presentación o en notas del presentador.

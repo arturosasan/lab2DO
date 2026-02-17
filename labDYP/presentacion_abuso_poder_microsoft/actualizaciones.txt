@@ -1,0 +1,68 @@
+
+Terminado
+Fallos en Windows 11: Actualizaciones problemáticas en 2025 según El Chapuzas Informático
+
+El sitio especializado El Chapuzas Informático reportó múltiples fallos en Windows 11 durante 2025, principalmente asociados a actualizaciones de seguridad y nuevas funciones. A continuación, se detallan los principales incidentes documentados por esta fuente.
+Fallo actualización Windows 11 enero 2025
+Problemas con las actualizaciones de enero de 2025 en Windows 10 y 11
+
+En enero de 2025, Microsoft lanzó varias actualizaciones de seguridad (KB5049981 para Windows 10, KB5050009 para Windows 11 24H2 y KB5050021 para versiones anteriores) que generaron una ola de problemas entre los usuarios. Entre los fallos más destacados se encontraban problemas con controladores USB, DAC, Bluetooth, WiFi y webcams.
+
+Un caso específico fue el de los auriculares Bluetooth, que, aunque se conectaban, no emitían sonido y causaban errores al reproducir audio en plataformas como YouTube. Además, usuarios de portátiles como el HP Spectre reportaron que sus webcams integradas dejaron de funcionar, con errores persistentes incluso tras desinstalar el parche, requiriendo en algunos casos una reinstalación completa del sistema operativo.
+
+También se detectaron bloqueos en el Administrador de tareas, la herramienta de recorte y al usar Alt+Tab, afectando tanto a aplicaciones como a juegos, aunque estos seguían ejecutándose en segundo plano.
+Actualización KB5050009 problemas Bluetooth
+Errores webcam Windows 11 2025
+Fallos críticos en SSD tras la actualización KB5063878 (agosto 2025)
+
+En agosto de 2025, se reportó un problema grave relacionado con la actualización de seguridad KB5063878 para Windows 11 24H2. Esta actualización podría causar fallos críticos en unidades SSD, especialmente bajo condiciones de escritura intensiva (alrededor de 50 GB continuos).
+
+Los síntomas incluían que el SSD dejaba de ser reconocido por el sistema, incluso tras reinicios, y en casos graves, las particiones quedaban inaccesibles y el sistema SMART dejaba de funcionar, dando la impresión de un fallo físico irreversible.
+
+Los dispositivos más afectados usaban controladoras Phison, como el Corsair Force MP600, Kioxia Exceria Plus G4, Fikwot FN955 y SanDisk Extreme PRO. En contraste, modelos de Samsung y Solidigm no mostraron problemas. Microsoft no reconoció oficialmente este fallo, aunque sí admitió un error distinto (0x80240069) relacionado con la instalación vía WSUS/SCCM.
+Fallo SSD Windows 11 KB5063878
+SSD Phison fallo Windows 11
+Activación forzada de Agentes de IA con fallos reconocidos (diciembre 2025)
+
+En diciembre de 2025, El Chapuzas Informático reveló que Microsoft reconoció fallos graves en los nuevos Agentes de IA integrados en Windows 11, a pesar de activarlos por defecto sin opción clara de desactivación. Entre los problemas admitidos se incluían:
+
+    Alucinaciones (respuestas incorrectas o inventadas).
+
+    Malinterpretación de instrucciones.
+
+    Vulnerabilidades de seguridad, como la posibilidad de inyección cruzada de prompts (manipulación de archivos para que el agente ejecute acciones no deseadas).
+
+    Robo de datos y deterioro del rendimiento del sistema.
+
+Microsoft admitió que un agente podría ejecutar acciones no intencionadas por el usuario, generando fallos potencialmente peligrosos. Aunque la información fue publicada originalmente en octubre, fue actualizada en diciembre y pasó desapercibida hasta finales de mes.
+Agentes IA Windows 11 fallos Microsoft
+Problemas Agentes IA Windows 11
+Descontinuación anticipada de Windows 11 SE
+
+Aunque no es un fallo técnico directo, en agosto de 2025 se anunció que Windows 11 SE no recibirá la versión 25H2 ni soporte más allá de octubre de 2026. Microsoft indicó que dejará de proporcionar actualizaciones, asistencia técnica y correcciones de seguridad, recomendando a los usuarios migrar a dispositivos con otras ediciones de Windows 11. Esta decisión afecta principalmente a entornos educativos, donde esta edición era común.
+Windows 11 SE fin soporte 2026
+Problemas con las actualizaciones de enero de 2025 en Windows 10 y 11
+Fallos críticos en SSD tras la actualización KB5063878 (agosto 2025)
+Activación forzada de Agentes de IA con fallos reconocidos (diciembre 2025)
+Descontinuación anticipada de Windows 11 SE
+Necesito más, encuentra más noticias
+Terminado
+Más noticias sobre fallos de Windows 11 en 2025 según El Chapuzas Informático
+
+Además de los fallos ya mencionados, El Chapuzas Informático reportó nuevos problemas críticos en Windows 11 durante 2025, afectando a la instalación, arranque, seguridad y funcionalidad básica del sistema.
+Problemas actualización Windows 11 marzo 2025
+Bucle de instalación con la KB5053598 (marzo 2025)
+
+En marzo de 2025, la actualización KB5053598 desencadenó un bucle infinito de instalación fallida en múltiples dispositivos. Los usuarios reportaron códigos de error como 0x800f0993, 0x800F081F, 0x80070032 y 0xC004F211, donde el sistema descargaba la actualización, alcanzaba el 90-100%, reiniciaba y volvía a intentar instalarla sin éxito. Este ciclo se repetía indefinidamente, dejando los equipos inutilizables sin intervención manual.
+Error 0x800f0993 Windows 11 bucle
+Pantallazos azules y fallos de inicio de sesión (abril 2025)
+
+La actualización de abril de 2025 (KB5055523) provocó pantallazos azules (BSOD) con el código 0x18B (SECURE_KERNEL_ERROR) y bloqueos de Windows Hello. Muchos usuarios no podían iniciar sesión ni con reconocimiento facial ni con PIN, quedando bloqueados fuera de sus sistemas. Microsoft reconoció el fallo y desplegó una corrección silenciosa (KIR) para mitigarlo, aunque algunos equipos se reiniciaban cada uno o dos minutos incluso después.
+Windows Hello falla actualización abril 2025
+Incompatibilidad con SMBv1 y problemas en entornos empresariales (octubre 2025)
+
+Con el lanzamiento de Windows 11 25H2, Microsoft introdujo varios problemas conocidos. Entre ellos, la imposibilidad de usar el instalador WUSA (.msu), el bloqueo del uso compartido de archivos SMBv1 (requiriendo configuraciones manuales), y la falta de soporte para la herramienta de creación de medios en dispositivos ARM64. Además, la actualización KB5066835 hizo que muchos sistemas perdieran la resolución del localhost, afectando a desarrolladores y servidores locales.
+Problemas SMBv1 Windows 11 25H2
+Fallo crítico en el Entorno de Recuperación (WinRE) (octubre 2025)
+
+Tras la actualización del 14 de octubre de 2025 (KB5066835), Microsoft reconoció que los teclados y ratones USB dejaban de funcionar en el Entorno de Recuperación de Windows (WinRE). Este fallo afectaba tanto a las versiones 25H2 como 24H2 y a Windows Server 2025, impidiendo a los usuarios reparar su sistema cuando más lo necesitaban. La solución llegó días después con la actualización KB5070773.
