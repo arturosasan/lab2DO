@@ -1,0 +1,31 @@
+Class documentation
+<---- javadoc command: ---->
+/usr/lib/jvm/java-21-openjdk/bin/javadoc
+-author
+-version
+-nodeprecated
+-package
+-Xdoclint:none
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+21
+-classpath
+/opt/bluej/bluejcore.jar:/opt/bluej/junit-4.12.jar:/opt/bluej/junit-jupiter-5.5.2.jar:/opt/bluej/junit-jupiter-api-5.5.2.jar:/opt/bluej/junit-jupiter-engine-5.5.2.jar:/opt/bluej/junit-jupiter-params-5.5.2.jar:/opt/bluej/junit-platform-commons-1.5.2.jar:/opt/bluej/junit-platform-engine-1.5.2.jar:/opt/bluej/junit-platform-launcher-1.5.2.jar:/opt/bluej/junit-platform-suite-api-1.5.2.jar:/opt/bluej/junit-vintage-engine-5.5.2.jar:/opt/bluej/hamcrest-core-1.3.jar:/opt/bluej/opentest4j-1.2.0.jar:/opt/bluej/lang-stride.jar:/opt/bluej/javafx/javafx.base.jar:/opt/bluej/javafx/javafx.controls.jar:/opt/bluej/javafx/javafx.fxml.jar:/opt/bluej/javafx/javafx.graphics.jar:/opt/bluej/javafx/javafx.media.jar:/opt/bluej/javafx/javafx.properties.jar:/opt/bluej/javafx/javafx.swing.jar:/opt/bluej/javafx/javafx.web.jar:/home/arturosasan/lab2DO/eda/src
+-d
+/home/arturosasan/lab2DO/eda/src/doc
+-encoding
+UTF-8
+-charset
+UTF-8
+/home/arturosasan/lab2DO/eda/src/aplicaciones/censo/ListaElectores.java
+<---- end of javadoc command ---->
+Loading source file /home/arturosasan/lab2DO/eda/src/aplicaciones/censo/ListaElectores.java...
+Constructing Javadoc information...
+Standard Doclet version 21.0.10+7
+Building tree for all the packages and classes...
+Generating /home/arturosasan/lab2DO/eda/src/doc/aplicaciones/censo/ListaElectores.html...
+Generating /home/arturosasan/lab2DO/eda/src/doc/aplicaciones/censo/package-summary.html...
+Generating /home/arturosasan/lab2DO/eda/src/doc/index.html...
