@@ -2,41 +2,39 @@
 
 public class Pool2 extends Pool{ //max kids/instructor
     private int nanos = 0, instructores = 0;
-    private int ki, cap;
+    private int max_kids = 0;
     public void init(int ki, int cap) {
-        this.ki = ki;
-        this.cap = cap;
+        max_kids = ki;
     }
-    
+
     public synchronized void kidSwims() throws InterruptedException {
-        while (instructores == 0 || nanos >= ki * instructores) {
+        while (instructores == 0 
+            || nanos >= max_kids * instructores) {
             log.waitingToSwim();
             wait();
         }
-        nanos++;
+        ++nanos;
         log.swimming();
     }
-    
+
     public synchronized void kidRests() {
-        this.nanos--;
+        --nanos;
+        notifyAll();
         log.resting();
-        notifyAll();
     }
+
     public synchronized void instructorSwims() {
-        instructores++;
-        log.swimming();
+        ++instructores;
         notifyAll();
+        log.swimming();
     }
+
     public synchronized void instructorRests() throws InterruptedException {
-        while (nanos >= instructores * ki) {
+        while (nanos > max_kids * (instructores - 1)) {
             log.waitingToRest();
-            if (instructores > 1) {
-                break;   
-            } else {
-                wait();   
-            }
+            wait();   
         }
-        instructores--;
-        log.resting();    
+        --instructores;
+        log.resting();
     }
 }

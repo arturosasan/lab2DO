@@ -2,47 +2,45 @@
 
 public class Pool3 extends Pool{ //max capacity
     private int nanos = 0, instructores = 0;
-    private int ki, cap;
+    private int max_kids = 0, max_cap = 0;
     public void init(int ki, int cap) {
-        this.ki = ki;
-        this.cap = cap;
+        max_kids = ki;
+        max_cap = cap;
     }
 
-    public synchronized void kidSwims() throws InterruptedException{
-        while (instructores == 0 || ((nanos + instructores) / 2 + 1) == (nanos + instructores) / 2 ) {
+    public synchronized void kidSwims() throws InterruptedException {
+        while (instructores == 0 
+            || nanos >= max_kids * instructores  
+            || (instructores * nanos) >= max_cap){
             log.waitingToSwim();
             wait();
         }
-        nanos++;
+        ++nanos;
         log.swimming();
     }
 
     public synchronized void kidRests() {
-        this.nanos--;
-        log.resting();
+        --nanos;
         notifyAll();
+        log.resting();
     }
 
-    public synchronized void instructorSwims() throws InterruptedException{
-        while (((nanos + instructores) / 2 + 1) == (nanos + instructores) / 2 ) {
+    public synchronized void instructorSwims() throws InterruptedException {
+        while ((instructores + nanos) >= max_cap) {
             log.waitingToSwim();
             wait();
         }
-        instructores++;
-        log.swimming();
+        ++instructores;
         notifyAll();
+        log.swimming();
     }
 
-    public synchronized void instructorRests() throws InterruptedException{
-        while (nanos > 0) {
+    public synchronized void instructorRests() throws InterruptedException {
+        while (nanos > max_kids * (instructores - 1)) {
             log.waitingToRest();
-            if (instructores > 1) {
-                break;   
-            } else {
-                wait();   
-            }
+            wait();   
         }
-        instructores--;
+        --instructores;
         log.resting();
     }
 }
