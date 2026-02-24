@@ -1,0 +1,13 @@
+APELLIDOS, NOMBRE: SARRIÓN SÁNCHEZ, ARTURO
+GRUPO : 2D1
+DNI: 26895472 
+
+CLAVE ESPACIO COMPARTIDO : lampara
+MODELO : Pool2
+
+PRÁCTICA 1: USO COMPARTIDO DE UNA PISCINA
+
+Respuesta: Si solamente se utiliza notify() en vez de notifyAll(), solamente se notifica a un único hilo de
+ejecución, por lo que si hay más de uno esperando a 
+X acción, y gracias a notifyAll() este método avisa del 
+cambio de estado a todos esos hilos en la ejecución.

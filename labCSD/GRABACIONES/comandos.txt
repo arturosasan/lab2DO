@@ -1,0 +1,3 @@
+wf-recorder -g recording.mkv -c libvpx-vp9
+
+ffmpeg -y -i recording.mkv -c:v libvpx-vp9 -crf 50 -b:v 0 -an recordingOUTPUT.webm
