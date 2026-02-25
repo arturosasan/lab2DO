@@ -87,4 +87,66 @@ public class ListaElectores {
         }
         return -1;
     }
+
+    // ACTIVIDADES EXTRA
+
+    /**
+     * Devolver una ListaElectores que sea el subconjunto de this ListaElectores
+     * que contenga los habitantes cuyo código postal esté en el rango [cp1 .. cp2].
+     * Si, al invocarlo, cp1 = cp2,
+     * entonces se obtiene la ListaElectores de un único código postal.
+     *
+     * @param cp1 el primer código postal del rango (principio)
+     *
+     * @param cp2 el segundo código postal del rango (fin)
+     *
+     * @return  una lista de electores con habitantes de código postal entre los rangos indicados
+     */
+    public ListaElectores getCensoCP(int cp1, int cp2) {
+
+        ListaElectores resultado = new ListaElectores(false, 0);
+
+        censo.inicio();
+
+        while (!censo.esFin()) {
+            Habitante h = censo.recuperar();
+
+            if (h.getCp() >= cp1 && h.getCp() <= cp2) {
+                resultado.censo.insertar(h);
+            }
+
+            censo.siguiente();
+        }
+        return resultado;
+    }
+
+    /**
+     * Devolver una ListaElectores que sea el subconjunto de this ListaElectores
+     * que contenga los habitantes cuyo primer o segundo apellido comiencen por el String prefijo
+     *
+     * @param prefijo El prefijo del nombre a buscar
+     *
+     * @return  una lista de electores con habitantes de apellidos coincidentes con el prefijo dado
+     */
+
+    public ListaElectores buscador(String prefijo) {
+
+        ListaElectores resultado = new ListaElectores(false, 0);
+
+        censo.inicio();
+
+        while (!censo.esFin()) {
+
+            Habitante h = censo.recuperar();
+
+            if (h.getApellido1().startsWith(prefijo) || h.getApellido2().startsWith(prefijo)) {
+
+                resultado.censo.insertar(h);
+            }
+
+            censo.siguiente();
+        }
+
+        return resultado;
+    }
 }

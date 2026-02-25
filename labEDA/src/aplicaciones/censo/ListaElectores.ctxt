@@ -15,4 +15,10 @@ comment4.text=\n\ Crea\ una\ ListaElectores...\n\ \n\ @param\ orden\ Un\ boolean
 comment5.params=h
 comment5.target=int\ indice(Habitante)
 comment5.text=\n\ Devuelve\ el\ \u00EDndice\ o\ posicion\ del\ Habitante\ h\ en\ una\ ListaElectores,\ \n\ o\ -1\ si\ h\ no\ forma\ parte\ de\ la\ lista.\ \n\ \n\ @param\ h\ un\ Habitante\n\ @return\ \ el\ \u00EDndice\ de\ h\ en\ un\ censo,\ un\ valor\ int\n\ \ \ \ \ \ \ \ \ \ 0\ o\ positivo\ si\ h\ esta\ en\ el\ censo\ \ \ \ \ \ \n\ \ \ \ \ \ \ \ \ \ o\ -1\ en\ caso\ contrario\n
-numComments=6
+comment6.params=cp1\ cp2
+comment6.target=ListaElectores\ getCensoCP(int,\ int)
+comment6.text=\n\ Devolver\ una\ ListaElectores\ que\ sea\ el\ subconjunto\ de\ this\ ListaElectores\n\ que\ contenga\ los\ habitantes\ cuyo\ c\u00F3digo\ postal\ est\u00E9\ en\ el\ rango\ [cp1\ ..\ cp2].\n\ Si,\ al\ invocarlo,\ cp1\ \=\ cp2,\n\ entonces\ se\ obtiene\ la\ ListaElectores\ de\ un\ \u00FAnico\ c\u00F3digo\ postal.\n\n\ @param\ cp1\ el\ primer\ c\u00F3digo\ postal\ del\ rango\ (principio)\n\n\ @param\ cp2\ el\ segundo\ c\u00F3digo\ postal\ del\ rango\ (fin)\n\n\ @return\ \ una\ lista\ de\ electores\ con\ habitantes\ de\ c\u00F3digo\ postal\ entre\ los\ rangos\ indicados\n
+comment7.params=prefijo
+comment7.target=ListaElectores\ buscador(java.lang.String)
+comment7.text=\n\ Devolver\ una\ ListaElectores\ que\ sea\ el\ subconjunto\ de\ this\ ListaElectores\n\ que\ contenga\ los\ habitantes\ cuyo\ primer\ o\ segundo\ apellido\ comiencen\ por\ el\ String\ prefijo\n\n\ @param\ prefijo\ El\ prefijo\ del\ nombre\ a\ buscar\n\n\ @return\ \ una\ lista\ de\ electores\ con\ habitantes\ de\ apellidos\ coincidentes\ con\ el\ prefijo\ dado\n
+numComments=8

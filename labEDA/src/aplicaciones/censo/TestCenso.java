@@ -47,14 +47,12 @@ public class TestCenso {
         int cp1 = sc.nextInt();
         System.out.println("Escriba el código postal superior o máximo:"); 
         int cp2 = sc.nextInt();
-        /*
         ListaElectores b = a.getCensoCP(cp1, cp2);
         System.out.println("EJEMPLO. ListaElectores. " + b.getTalla() 
             + " ELECTORES EN CODIGOS POSTALES [" + cp1 + " .. " + cp2 + "]:");
         System.out.println("---------------------------------------------------");        
         System.out.println(b);
         System.out.println("---------------------------------------------------\n");
-        */
     }
     
     public static void buscar() { 
@@ -66,14 +64,12 @@ public class TestCenso {
         System.out.println("Escriba el prefijo de los apellidos de la ListaElectores a generar:");
         Scanner sc = new Scanner(System.in);
         String prefijo = sc.next().toUpperCase();
-        /*
         ListaElectores b = a.buscador(prefijo);
         System.out.println("EJEMPLO. ListaElectores. " + b.getTalla() 
             + " ELECTORES CON APELLIDOS QUE EMPIEZAN CON " + prefijo);
         System.out.println("---------------------------------------------------");        
         System.out.println(b);
         System.out.println("---------------------------------------------------\n");
-        */
     }
     
     private static boolean mostrar(boolean ok) {
