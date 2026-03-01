@@ -128,7 +128,6 @@ public class ListaElectores {
      *
      * @return  una lista de electores con habitantes de apellidos coincidentes con el prefijo dado
      */
-
     public ListaElectores buscador(String prefijo) {
 
         ListaElectores resultado = new ListaElectores(false, 0);
