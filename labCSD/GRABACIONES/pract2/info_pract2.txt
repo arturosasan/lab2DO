@@ -1,0 +1,5 @@
+1.- SARRIÓN SÁNCHEZ ARTURO, DNI = 26895472P
+
+2.- Clave = 'lampara' -> "Assimetry (last/but last)"
+
+3.- Se rompe la Exclusión Mútua, Retención y Espera, y Espera Circular
