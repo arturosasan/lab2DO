@@ -11,11 +11,13 @@ timestamp() {
 
 if pgrep -x "wf-recorder" >/dev/null; then
   echo "Deteniendo grabación..."
+  notify-send "Deteniendo grabación..."
   pkill -INT -x wf-recorder
 
   sleep 1
   if [[ ! -f "$TEMPFILE" ]]; then
     echo "Error: no se encontró $TEMPFILE"
+    notify-send "Error" "no se encontró $TEMPFILE"
     exit 1
   fi
 
@@ -24,13 +26,16 @@ if pgrep -x "wf-recorder" >/dev/null; then
 
   # Convertir a WebM y luego eliminar el .mkv original
   echo "Convirtiendo a $FINALNAME..."
+  notify-send "Convirtiendo a $FINALNAME"
   ffmpeg -y -i "$TEMPFILE" -c:v $CODEC -crf 50 -b:v 0 -an "$FINALNAME" &&
     rm -f "$TEMPFILE"
 
   echo "Listo! El archivo final es: $FINALNAME"
+  notify-send "Listo! El archivo final es: $FINALNAME"
   exit 0
 fi
 
 # Si no había grabación en marcha (1er uso)
 echo "Iniciando grabación de pantalla..."
+notify-send "Iniciando grabación de pantalla" "Directorio -> $(pwd)"
 wf-recorder -f "$TEMPFILE" -c "$CODEC"
