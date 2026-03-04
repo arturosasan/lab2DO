@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Posting
+comment0.text=\n\ Posting\:\ clase\ que\ representa\ la\ informacion\ asociada\ a\ \ \ \n\ la\ aparicion\ de\ un\ Termino\ de\ un\ Indice\ en\ un\ libro,\ i.e.\ el\ titulo\ \ \ \n\ del\ libro\ y\ (el\ numero\ de)\ la\ linea\ donde\ aparece\ el\ Termino.\n\ \n\ @author\ \ Profesores\ EDA\n\ @version\ Septiembre\ 2023\n
+comment1.params=t\ n
+comment1.target=Posting(java.lang.String,\ int)
+comment1.text=Crea\ un\ Posting\ del\ libro\ de\ titulo\ t\ y\ de\ su\ numero\ de\ linea\ n.
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=Devuelve\ un\ String\ con\ un\ Posting\ en\ formato\ texto.
+numComments=3
