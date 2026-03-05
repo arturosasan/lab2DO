@@ -161,12 +161,15 @@ public class BuscadorBD {
     public ListaConPI<Termino> terminosNveces(int n) { 
         ListaConPI<Termino> res = new LEGListaConPI<Termino>();
         ListaConPI<Termino> aux = index.claves();
-        for (aux.inicio(); !aux.esFin(); aux.siguiente()) {
+        
+        aux.inicio();
+        while (!aux.esFin()) {
             Termino auxT = aux.recuperar(); // Termino asociado a la lista de CLAVES (1er elemento de la 2-tupla Map<Termino,<Posting>>)
             ListaConPI<Posting> posi = index.recuperar(auxT); // Nº de veces que ha aparecido el termino en la lista de indices
             if (n == posi.talla()) {
                 res.insertar(auxT);
             }
+            aux.siguiente();
         }
         if (res.esVacia()) {
             return null;   // ??? 
