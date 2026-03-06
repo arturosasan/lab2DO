@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.FXMLRegisterController">
+
+    <!-- 1. HBox: Cabecera "Register form" -->
+    <HBox alignment="CENTER_LEFT" fillHeight="true" style="-fx-background-color: #0685BC;">
+        <padding>
+            <Insets bottom="10" left="20" right="20" top="10" />
+        </padding>
+        <VBox.margin>
+            <Insets />
+        </VBox.margin>
+        <Text fill="WHITE" style="-fx-font-family: 'Arial Rounded MT Bold'; -fx-font-size: 24px; -fx-font-weight: bold;" text="Register form" />
+    </HBox>
+
+    <!-- 2. GridPane: Cuerpo del formulario -->
+    <GridPane hgap="0" style="-fx-background-color: #F4F4F4;" vgap="0">
+        <padding>
+            <Insets bottom="10" left="20" right="20" top="10" />
+        </padding>
+
+        <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="563.0" minWidth="327.0" prefWidth="327.0" />
+         <ColumnConstraints hgrow="ALWAYS" maxWidth="342.0" minWidth="10.0" prefWidth="342.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <!-- Fila 0: Email -->
+            <RowConstraints vgrow="NEVER" />
+            <!-- Fila 1: Password -->
+            <RowConstraints vgrow="NEVER" />
+            <!-- Fila 2: Repeat password -->
+            <RowConstraints vgrow="NEVER" />
+            <!-- Fila 3: Separator -->
+            <RowConstraints vgrow="NEVER" />
+            <!-- Fila 4: Birthdate -->
+            <RowConstraints vgrow="NEVER" />
+            <!-- Fila 5: Fila vacía que crece -->
+            <RowConstraints maxHeight="1.7976931348623157E308" vgrow="ALWAYS" />
+            <!-- Fila 6: Botones -->
+            <RowConstraints vgrow="NEVER" />
+        </rowConstraints>
+
+        <!-- Fila 0: Email -->
+        <VBox spacing="2" GridPane.rowIndex="0">
+            <padding><Insets bottom="4" top="8" /></padding>
+            <Label alignment="CENTER_LEFT" style="-fx-font-size: 16px;" text="Email:" textFill="#025477" />
+            <TextField fx:id="emailField" minHeight="26" minWidth="150" prefHeight="26" prefWidth="220.0" promptText="yourEmail@domain.com" style="-fx-font-size: 16px;" />
+            <Label fx:id="emailError" alignment="CENTER_LEFT" style="-fx-font-size: 16px;" text="Incorrect Email" textFill="#ca0505" visible="false" />
+        </VBox>
+
+        <!-- Fila 1: Password -->
+        <VBox spacing="2" GridPane.rowIndex="1">
+            <padding><Insets bottom="4" top="8" /></padding>
+            <Label alignment="CENTER_LEFT" style="-fx-font-size: 16px;" text="Password:" textFill="#025477" />
+            <PasswordField fx:id="passwordField" minHeight="26" minWidth="150" prefHeight="26" prefWidth="350" promptText="LettersNumbersSymbols" style="-fx-font-size: 16px;" />
+            <Label fx:id="passwordError" alignment="CENTER_LEFT" style="-fx-font-size: 16px;" text="It must be a combination of 8 to 15 numbers o letters, without blank spaces" textFill="#ca0505" visible="false" wrapText="true" />
+        </VBox>
+
+        <!-- Fila 2: Repeat password -->
+        <VBox spacing="2" GridPane.rowIndex="2">
+            <padding><Insets bottom="4" top="8" /></padding>
+            <Label alignment="CENTER_LEFT" style="-fx-font-size: 16px;" text="Repeat password:" textFill="#025477" />
+            <PasswordField fx:id="password2Field" minHeight="26.0" minWidth="150.0" prefHeight="26.0" prefWidth="350.0" promptText="LettersNumbersSymbols" style="-fx-font-size: 16px;" />
+            <Label fx:id="passwordConfirmError" alignment="CENTER_LEFT" style="-fx-font-size: 16px;" text="Passwords don't match" textFill="#ca0505" visible="false" />
+        </VBox>
+
+        <!-- Fila 3: Separator -->
+        <Separator GridPane.rowIndex="3">
+            <VBox.margin><Insets bottom="8" top="8" /></VBox.margin>
+        </Separator>
+
+        <!-- Fila 4: Birthdate -->
+        <VBox spacing="2" GridPane.rowIndex="4">
+            <padding><Insets bottom="4" top="8" /></padding>
+            <Label alignment="CENTER_LEFT" style="-fx-font-size: 16px;" text="Birthdate:" textFill="#025477" />
+            <DatePicker fx:id="dateField" minWidth="150" prefWidth="200" style="-fx-font-size: 16px;" />
+            <Label fx:id="dateError" alignment="CENTER_LEFT" style="-fx-font-size: 16px;" text="User must be 16 years old" textFill="#ca0505" visible="false" />
+        </VBox>
+
+        <!-- Fila 5: Fila vacía que crece para empujar botones hacia abajo -->
+
+        <!-- Fila 6: HBox con botones Register y Cancel -->
+        <HBox alignment="CENTER_RIGHT" spacing="25" GridPane.columnIndex="1" GridPane.rowIndex="6">
+            <GridPane.margin>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </GridPane.margin>
+
+            <!-- Botón Register (bAccept) -->
+            <Button fx:id="bAccept" minWidth="80" onAction="#handleBAcceptOnAction" prefWidth="100" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-background-color: #0685BC; -fx-background-radius: 5;" text="Register" textFill="WHITE">
+                <graphic>
+                    <ImageView fitHeight="16" fitWidth="16" preserveRatio="true" smooth="true">
+                        <image>
+                            <Image url="@../icons/accept_white.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <!-- Botón Cancel (bCancel) -->
+            <Button fx:id="bCancel" minWidth="80" prefWidth="100" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-background-color: #0685BC; -fx-background-radius: 5;" text="Cancel" textFill="WHITE">
+                <graphic>
+                    <ImageView fitHeight="16" fitWidth="16" preserveRatio="true" smooth="true">
+                        <image>
+                            <Image url="@../icons/cancel_white.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+        </HBox>
+
+    </GridPane>
+
+</VBox>
