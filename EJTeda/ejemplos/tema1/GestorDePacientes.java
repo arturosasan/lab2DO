@@ -1,9 +1,10 @@
 package ejemplos.tema1;
 
 import librerias.estructurasDeDatos.lineales.*;
+import librerias.estructurasDeDatos.modelos.*;
 
 public class GestorDePacientes {
-    private Cola<Paciente> q;  
+    /*private Cola<Paciente> q;
     private double horaCita;
     private static final int MAXIMO_DIARIO_PACIENTES = 40;
     private static final double HORA_INICIO_CONSULTA = 9.00;
@@ -16,7 +17,7 @@ public class GestorDePacientes {
 
     public String darCita(Paciente x) {
         String res = "Espere un momento; consulto si le pueden atender magnana ... ";
-        boolean aceptado = (q.talla <= MAXIMO_DIARIO_PACIENTES); 
+        boolean aceptado = ( <= MAXIMO_DIARIO_PACIENTES);
         if (!aceptado) res += "\nLo siento. Magnana no podemos atenderle";
         else{
             q.encolar(x); 
@@ -32,5 +33,6 @@ public class GestorDePacientes {
     public String toString() {
         return "Historiales de sus " + q.talla 
             + " Pacientes de magnana en orden de visita\n" + q;
-    }                    
+    }
+     */
 }
