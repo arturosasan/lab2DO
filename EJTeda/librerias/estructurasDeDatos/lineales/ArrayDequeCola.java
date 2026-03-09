@@ -2,21 +2,20 @@ package librerias.estructurasDeDatos.lineales;
 
 import librerias.estructurasDeDatos.modelos.Cola;
 
-import java.util.ArrayDeque;
-
 // EJERCICIO 3.1
 
-public class ArrayDeQueCola<E> extends ArrayDeque<E> implements Cola<E> {
-    protected ArrayDeque elArray;
+public class ArrayDequeCola<E> extends ArrayDeQueCola<E> implements Cola<E> {
 
     @SuppressWarnings("unchecked")
-    public ArrayDeQueCola() {
-        elArray = new ArrayDeque();
+    ArrayDequeCola() {
+        elArray = new ArrayDequeCola();
     }
+
     @SuppressWarnings("unchecked")
     public void encolar(E e) {
         elArray.add(e);
     }
+
     @SuppressWarnings("unchecked")
     public E desencolar() {
         return (E) elArray.poll();
@@ -28,17 +27,18 @@ public class ArrayDeQueCola<E> extends ArrayDeque<E> implements Cola<E> {
     }
 
     @SuppressWarnings("unchecked")
-    public boolean esVacia() {
-        return elArray.size() == 0;
+    public boolean esVacía() {
+        return primero() == null;
     }
 
     @SuppressWarnings("unchecked")
     public String toString() {
-        StringBuilder res = new StringBuilder();
-        res.append("[");
-        for(int j = 0; j < elArray.size(); j++ )
-            res.append(elArray.toArray()[j].toString());
-        res.append("]");
-        return res.toString();
+        StringBuilder SB = new StringBuilder();
+        SB.append("[");
+        for (int i = 0; i < elArray.size(); i++) {
+            SB.append(elArray.toArray()[i].toString());
+        }
+        SB.append("]");
+        return SB.toString();
     }
 }
