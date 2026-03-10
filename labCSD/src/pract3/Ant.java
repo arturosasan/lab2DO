@@ -1,4 +1,5 @@
- 
+package pract3;
+
 /**
  * Write a description of class Ant here.
  * 

@@ -1,4 +1,5 @@
- 
+package pract3;
+
 
 /**
  * Ant retries a movement

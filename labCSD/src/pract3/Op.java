@@ -1,4 +1,5 @@
- 
+package pract3;
+
 
 /**
  * Base class for simulation ops

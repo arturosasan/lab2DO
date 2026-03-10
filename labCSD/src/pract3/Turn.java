@@ -1,4 +1,5 @@
- 
+package pract3;
+
 
 /**
  * Ant turns to a Dir

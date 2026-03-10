@@ -1,4 +1,5 @@
- 
+package pract3;
+
 
 /**
  * State of cells and Ants

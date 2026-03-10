@@ -1,4 +1,5 @@
- 
+package pract3;
+
 
 /**
  * Ant changes Dir because destination is not empty

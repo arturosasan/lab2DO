@@ -1,4 +1,5 @@
- 
+package pract3;
+
 /**
  * Operations that Terrain offers to an Ant
  * 

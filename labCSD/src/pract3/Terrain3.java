@@ -1,4 +1,5 @@
- 
+package pract3;
+
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.*;

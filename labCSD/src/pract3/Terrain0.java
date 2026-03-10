@@ -1,4 +1,5 @@
- 
+package pract3;
+
 
 /**
  * Native monitor based Terrain
