@@ -179,11 +179,14 @@ public class BuscadorBD {
       }
       aux.siguiente();
     }
+
     if (res.esVacia()) {
       return null; // ???
     } else {
       return res;
     }
+
+    //return res.esVacia() ? null : res;
   }
 
   /**
