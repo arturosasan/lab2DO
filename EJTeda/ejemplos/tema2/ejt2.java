@@ -21,7 +21,7 @@ public class ejt2 {
       return puntoCruce(v, posI, mitad - 1);
   }
 
-  // EJERCICIO 1.2
+  // EJERCICIO 1.2 DUDA
 
   public static int minimoCC(int[] v) {
     return minimoCC(v, 0, v.length - 1);
@@ -31,7 +31,7 @@ public class ejt2 {
       int m = (posI + posF) / 2;
       /*
       if(m==0) {
-        if(v[0]<v[1]) return 0;
+        if(v[0]<v[1]) return 0; // ???
         else return 1;
       }
        */
@@ -59,7 +59,7 @@ public class ejt2 {
         }
     }
 
-    // EJERCICIO 1.4
+    // EJERCICIO 1.4 // PREGUNTAR SI OK EL CAMBIO RESPECTO A LA SOLUCIÓN
 
     public static boolean dosStrings(String[] v, String x, String y) {
         return dosStrings(v, x, y, 0, v.length - 1);
@@ -97,6 +97,7 @@ public class ejt2 {
       }
     }
 
+    // DUDA, NO RESUELTO
     /*
     public static int subMax(int[] v) {
       return subMax(v, 0, v.length - 1);
@@ -114,7 +115,30 @@ public class ejt2 {
     }
      */
 
-    // EJERCICIO 2.5
+    public static int subSumaMax(int v[]) {
+        return subSumaMax(v, 0, v.length - 1);
+    }
+    private static int subSumaMax(int v[], int izq, int der) {
+        if (izq == der)
+            if (v[izq] > 0) return v[izq]; // CASO BASE
+            else return 0;
+        int mitad = (izq + der) / 2;
+        int sumaIzqMax = subSumaMax(v, izq, mitad);
+        int sumaDerMax = subSumaMax(v, mitad + 1, der);
+        int sumaMaxBordeIzq = 0, sumaBordeIzq = 0;
+        for (int i = mitad; i >= izq; i--) {
+            sumaBordeIzq += v[i] ;
+            if (sumaBordeIzq > sumaMaxBordeIzq) sumaMaxBordeIzq = sumaBordeIzq; // SE COMPARA LA SUMA QUE HAS HECHO CON LA ANTERIOR
+        }
+        int sumaMaxBordeDer = 0, sumaBordeDer = 0;
+        for (int i = mitad + 1; i <= der; i++) {
+            sumaBordeDer += v[i] ;
+            if (sumaBordeDer > sumaMaxBordeDer) sumaMaxBordeDer = sumaBordeDer;
+        }
+        return Math.max(Math.max(sumaIzqMax, sumaDerMax), sumaMaxBordeIzq + sumaMaxBordeDer);
+    }
+
+    // EJERCICIO 2.5 DUDA -> EJECUTAR MAIN
 
     public static int EXREC2021 (int[] v) {
         return EXREC2021(v, 0, v.length - 1);
