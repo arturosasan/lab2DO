@@ -1,0 +1,8 @@
+1.- SARRIÓN SÁNCHEZ, ARTURO; DNI = 26895472 
+
+2.- DNI: 26895472 -> Territorio = 7; Nº ants = 12; Nº    Movimientos = 7; Tiempo = 100ms
+
+3.- Clases modificadas:
+    Para modificar Terrain3, he tenido que modificar la propia clases de Terrain3, Viewer y Condition, creando nuevos objetos de ellas para crear el terreno acorde a las peticiones del enunciado, siendo que en el constructor se hace un doble for para recorrer las celdas del terrario en el eje de coordenadas X e Y. 
+    
+    NOTA: Para cambiar el movimiento a 100ms he editado el método delay de la clase 'Ant.java'
