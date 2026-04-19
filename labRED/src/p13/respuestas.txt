@@ -1,0 +1,63 @@
+EJERCICIO 1
+
+1.- 
+
+2.- Src = 192.168.1.181:52467 || Dst = 158.42.4.23:80
+
+3.- Coinciden
+
+4.- Son los mismos: Src = 192.168.1.181:52467 y Dst = 158.42.4.23:80
+
+EJERICIO 2
+
+1.- Src = 158.42.180.22:52467 || Dst = 158.42.4.23:80 -> Únicamente corresponde el destino, ya que es el router NAT al que le llegan todas las IPs de la intranet con sus peticiones
+
+2.- 158.42.23:80
+
+3.- Se cambia en IP
+
+4.- Recibe el GET una vez se ha completado el 3-way handshake [SYN -> SYN ACK -> ACK]
+
+EJERCICIO 3 (PDF)
+
+EJERCICIO 4 
+
+1.- Src = 192.168.1.2 || Dst = 158.42.53.72
+
+2.- El 40000 y 400016 respectivamente
+
+3.- La cabecera IP, ya que es un dispositivo de nivel de red y no puede modificar capas superiores (aplicación en este caso que es la que da la orden de conectarse a las IPs necesarias) 
+
+4.- Sabiendo que puertos se abren para cada una de las conexiones, ya que como hemos visto en el código de ejemplo esta aplicación tiene habilitadas las conexiones persistentes, por lo tanto hasta que no se "maten" esas conexiones se tiene que abrir un puerto nuevo para cada petición
+
+EJERCICIO 5
+
+1.- (LAN) Src = 192.168.1.100:15525 || Dst = 69.183.241.120:41400
+    (ISP) Src = 71.192.34.104:15525 || Dst = 69.183.241.120:41400
+
+    No se puede saber el puerto porque está inalcanzable
+    El error se encuentra en ICMP
+
+2.- Se usa el datagrama encapsulado porque no se hace ninguna petición de más
+
+3.- Se cambia la IP fuente
+
+EJERCICIO 6 
+
+1.- (LAN) Src = 192.168.1.2 || Dst = 158.42.180.62
+    (ISP) Src = 158.42.180.22 || Dst = 158.42.180.62
+
+2.- Está en modo activo, es el cliente el que abre la conexión al puerto 21 del servidor 
+
+3.- (PDF)
+
+4.- Cambia desde donde se ha iniciado la petición, ya que el NAT la traduce para que use desde una misma IP de la intranet. Esos dos nº son los bytes de mayor y menor peso del nº del puerto, que sirven para calcularlo (VER ANEXO PARA MEJOR EXPLICACIÓN)
+
+5.- No puede funcionar, ya que el nivel de red no tendría ninguna información de a que IP apuntar ni el puerto si todo está cifrado
+
+EJERCICIO 7 
+
+1.- (LAN) Src = 158.42.180.21:4468 || Dst = 192.168.1.2:22
+    (ISP) Src = 158.42.180.21:4468 || Dst = 158.42.180.22:22
+
+2.- El cambio / traducción del NAT de la IP destino en este caso, y tampoco se modifica el contenido de los mensajer ya que lo que hace NAT es modificar únicamente el nivel de red para poder asignar las peticiones a las máquinas correspondientes de forma adecuada 
