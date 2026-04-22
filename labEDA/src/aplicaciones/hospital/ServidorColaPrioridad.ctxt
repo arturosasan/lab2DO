@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=ServidorColaPrioridad
+comment0.text=\ Clase\ ServidorColaPrioridad\:\ \n\ \ implementa\ un\ ServidorDeQuirofano\ \n\ \ que\ usa\ un\ modelo\ de\ maxima\ prioridad\ (ColaPrioridad)\ \n\ \ para\ gestionar\ los\ pacientes\ en\ espera.\n\ \ \n\ \ @author\ \ Profesores\ EDA\n\ \ @version\ Septiembre\ 2023\n
+comment1.params=
+comment1.target=ServidorColaPrioridad()
+comment1.text=Crea\ un\ servidor\ vacio
+comment2.params=p
+comment2.target=void\ insertarEnEspera(Paciente)
+comment2.text=\ Incluye\ un\ nuevo\ Paciente\ en\ espera,\ p,\ en\ un\ ServidorQuirofano.\n\ \ @param\ p\ \ \ Paciente\n
+comment3.params=
+comment3.target=boolean\ hayPacientes()
+comment3.text=\ Comprueba\ si\ hay\ algun\ Paciente\ en\ espera\ en\ un\ ServidorQuirofano.\n\ \ @return\ boolean\n
+comment4.params=
+comment4.target=Paciente\ getPaciente()
+comment4.text=\ SII\ hayPacientes()\:\ \n\ \ devuelve\ el\ Paciente\ de\ un\ ServidorQuirofano\ que\ va\ a\ ser\ operado.\n\ \ @return\ Paciente\n
+comment5.params=h
+comment5.target=Paciente\ operarPaciente(int)
+comment5.text=\ SII\ hayPacientes()\:\ \n\ \ elimina\ de\ un\ ServidorDeQuirofano\ el\ Paciente\ que\ va\ a\ ser\ operado\ \n\ \ y\ devuelve\ el\ Paciente\ actualizando\ valor\ de\ ingresoEnQuirofano,\n\ \ resultado\ de\ sumar\ el\ tiempo\ h,\ recibido\ como\ argumento,\ \n\ \ y\ la\ duraci\u00F3n\ de\ la\ operaci\u00F3n\ (constante\ definida\ en\ la\ interfaz)\n\ \ @param\ h\ \ \ int\ (horas)\n\ \ @return\ \ \ \ Paciente\ \n
+numComments=6

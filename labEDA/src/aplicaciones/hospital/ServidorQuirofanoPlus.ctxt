@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=ServidorQuirofanoPlus
+comment0.text=\ Interfaz\ ServidorDeQuirofanoPlus\:\ \n\ \ ...\n\ \ \n\ \ @author\ \ Profesores\ EDA\n\ \ @version\ Septiembre\ 2023\n
+comment1.params=
+comment1.target=int\ numPacientes()
+comment2.params=
+comment2.target=Paciente\ transferirPaciente()
+comment3.params=s
+comment3.target=void\ distribuirPacientes(ServidorQuirofanoPlus)
+numComments=4

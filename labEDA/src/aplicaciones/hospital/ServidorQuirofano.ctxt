@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=ServidorQuirofano
+comment0.text=\ Interfaz\ ServidorDeQuirofano\:\ \n\ \ especifica\ la\ capacidad\ de\ servicio\ de\ un\ servidor\ de\ quirofano\ \n\ \ y\ los\ metodos\ que\ este\ ha\ de\ implementar\ **independientemente**\ \ \ \n\ \ de\ si\ usa\ una\ Cola\ o\ una\ Cola\ de\ Prioridad\ \n\ \ para\ gestionar\ los\ pacientes\ en\ espera.\n\ \ \n\ \ @author\ \ Profesores\ EDA\n\ \ @version\ Septiembre\ 2023\n
+comment1.params=p
+comment1.target=void\ insertarEnEspera(Paciente)
+comment1.text=\ Incluye\ un\ nuevo\ Paciente\ en\ espera,\ p,\ en\ un\ ServidorDeQuirofano.\n\ \ @param\ p\ \ \ Paciente\n
+comment2.params=
+comment2.target=boolean\ hayPacientes()
+comment2.text=\ Comprueba\ si\ hay\ algun\ Paciente\ en\ espera\ en\ un\ ServidorDeQuirofano.\n\ \ @return\ \ \ boolean\n
+comment3.params=
+comment3.target=Paciente\ getPaciente()
+comment3.text=\ SII\ hayPacientes()\:\ \n\ \ devuelve\ el\ Paciente\ de\ un\ ServidorDeQuirofano\ que\ va\ a\ ser\ operado.\n\ \ @return\ \ \ Paciente\n
+comment4.params=h
+comment4.target=Paciente\ operarPaciente(int)
+comment4.text=\ SII\ hayPacientes()\:\ \n\ \ elimina\ de\ un\ ServidorDeQuirofano\ el\ Paciente\ que\ va\ a\ ser\ operado\ \n\ \ y\ devuelve\ el\ Paciente\ actualizando\ valor\ de\ ingresoEnQuirofano\ \ \n\ \ @param\ h\ \ \ int\ (horas)\n\ \ @return\ \ \ \ Paciente\ \n
+numComments=5

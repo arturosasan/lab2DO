@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=ServidorColaFIFO
+comment0.text=\ Clase\ ServidorCola\:\ \n\ \ implementa\ un\ ServidorDeQuirofano\ \n\ \ que\ usa\ un\ modelo\ FIFO\ (Cola)\ \n\ \ para\ gestionar\ los\ pacientes\ en\ espera.\n\ \ \n\ \ @author\ \ Profesores\ EDA\n\ \ @version\ Septiembre\ 2023\n
+comment1.params=
+comment1.target=ServidorColaFIFO()
+comment1.text=Crea\ un\ servidor\ vacio
+comment2.params=p
+comment2.target=void\ insertarEnEspera(Paciente)
+comment2.text=\ Incluye\ un\ nuevo\ Paciente\ en\ espera,\ p,\ en\ un\ ServidorQuirofano.\n\ \ @param\ p\ \ \ Paciente\n
+comment3.params=
+comment3.target=boolean\ hayPacientes()
+comment3.text=\ Comprueba\ si\ hay\ algun\ Paciente\ en\ espera\ en\ un\ ServidorQuirofano.\n\ \ @return\ \ \ boolean\n
+comment4.params=
+comment4.target=Paciente\ getPaciente()
+comment4.text=\ SII\ hayPacientes()\:\ \n\ \ devuelve\ el\ Paciente\ de\ un\ ServidorQuirofano\ que\ va\ a\ ser\ operado.\n\ \ @return\ \ \ Paciente\n
+comment5.params=h
+comment5.target=Paciente\ operarPaciente(int)
+comment5.text=\ SII\ hayPacientes()\:\ \n\ \ elimina\ de\ un\ ServidorDeQuirofano\ el\ Paciente\ que\ va\ a\ ser\ operado\ \n\ \ y\ devuelve\ el\ Paciente\ actualizando\ valor\ de\ ingresoEnQuirofano\ \ \n\ \ @param\ h\ \ \ int\ (horas)\n\ \ @return\ \ \ \ Paciente\ \n
+numComments=6
