@@ -1,10 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.input.KeyCodeCombination?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 
-<BorderPane fx:id="borderPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.controller.MainViewController">
+<BorderPane fx:id="borderPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.controller.MainViewController">
+   <bottom>
+      <Label fx:id="state" prefHeight="18.0" prefWidth="249.0" BorderPane.alignment="BOTTOM_LEFT" />
+   </bottom>
+   <top>
+      <VBox prefHeight="108.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="_Archivo">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#exitMenu" text="Salir">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="P" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="_Lanzar">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#amazonClick" text="Amazon" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickBlogger" text="Blogger" />
+                        <MenuItem mnemonicParsing="false" onAction="#ebayClick" text="Ebay" />
+                        <MenuItem mnemonicParsing="false" onAction="#clickCaralibro" text="Facebook" />
+                        <MenuItem mnemonicParsing="false" text="Google+" />
+                     </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="_Opciones">
+                     <items>
+                        <Menu mnemonicParsing="false" text="Comprar en ">
+                           <items>
+                              <RadioMenuItem fx:id="amzOpt" mnemonicParsing="false" selected="true" text="Amazon">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="compras" />
+                                 </toggleGroup>
+                              </RadioMenuItem>
+                              <RadioMenuItem fx:id="ebayOpt" mnemonicParsing="false" text="Ebay" toggleGroup="$compras" />
+                           </items>
+                        </Menu>
+                     </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <ToolBar prefHeight="0.0" prefWidth="800.0">
+               <items>
+                   <Button mnemonicParsing="false" onAction="#amazonClick">
+                      <graphic>
+                         <ImageView fitHeight="62.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../icons/amazon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#clickBlogger">
+                     <graphic>
+                        <ImageView fitHeight="62.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../icons/bing.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#ebayClick">
+                     <graphic>
+                        <ImageView fitHeight="62.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../icons/ebay.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="93.0" layoutY="10.0" mnemonicParsing="false" onAction="#clickCaralibro">
+                     <graphic>
+                        <ImageView fitHeight="62.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../icons/facebook.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="261.0" layoutY="10.0" mnemonicParsing="false">
+                     <graphic>
+                        <ImageView fitHeight="62.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../icons/googlePlus.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </items>
+            </ToolBar>
+         </children>
+      </VBox>
+   </top>
    <center>
-      <Pane BorderPane.alignment="CENTER" />
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>
