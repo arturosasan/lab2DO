@@ -26,7 +26,7 @@
               <menus>
                 <Menu mnemonicParsing="false" text="_Archivo">
                   <items>
-                    <MenuItem mnemonicParsing="false" onAction="#exitMenu" text="Salir">
+                    <MenuItem mnemonicParsing="false" onAction="#exitMenu" text="_Salir">
                            <accelerator>
                               <KeyCodeCombination alt="UP" code="P" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
                            </accelerator>

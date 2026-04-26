@@ -9,8 +9,6 @@
         </group>
         <group name="IPC"/>
         <group name="Entrega proyecto IPC"/>
-        <group>
-            <file>file:/home/arturosasan/lab2DO/labIPC/IPC_FXML_ListView-main/nbproject/build-impl.xml</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
