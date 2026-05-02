@@ -2,9 +2,9 @@
 ###
 ## marzo de 2014
 ##
-## PRÁCTICA 13: SINCRONIZACIÓN POR INTERRUPCIONES
+## PRCTICA 13: SINCRONIZACIÓN POR INTERRUPCIONES
 ##
-## Programa usuario para la práctica
+## Programa usuario para la prctica
 
 #------- Segmento de datos ---------#
 	.data		
