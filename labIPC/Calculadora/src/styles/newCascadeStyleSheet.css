@@ -1,0 +1,22 @@
+.botonesCentro {
+    -fx-font-size: 20px;
+    -fx-border-color: #000000;
+    -fx-background-color: #999999;
+    -fx-font-weight: bold;
+}
+.botonesIzq {
+    -fx-font-size: 20px;
+    -fx-background-color: #ff9933;
+    -fx-border-color: #000000;
+    -fx-font-weight: bold;
+}
+.resultado {
+    -fx-background-color: #000000;
+    -fx-font-size: 30px;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-background-color: #ffffff;
+}
