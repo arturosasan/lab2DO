@@ -1,7 +1,7 @@
 package aplicaciones.hospital;
 
 import librerias.estructurasDeDatos.modelos.ColaPrioridad;
-import librerias.estructurasDeDatos.jerarquicos.MonticuloBinario;
+import librerias.estructurasDeDatos.putoBlueJ.MonticuloBinario;
 
 /** Clase ServidorColaPrioridad: 
  *  implementa un ServidorDeQuirofano 
