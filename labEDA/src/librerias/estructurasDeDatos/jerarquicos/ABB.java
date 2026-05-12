@@ -40,12 +40,14 @@ public class ABB<E extends Comparable<E>> {
      */
     protected NodoABB<E> construirEquilibrado(E[] v, int ini, int fin) {
         if (ini > fin) return null;
-        int mitad = ini+fin/2;
-        NodoABB<E> res = new NodoABB<>(v[mitad]);
-        res.izq = construirEquilibrado(v, ini, mitad - 1);
-        res.der = construirEquilibrado(v, mitad + 1, fin);
-        res.talla = 1 + talla(res.izq) + talla(res.der);
-        return res;
+        else {
+            int mitad = ini+fin/2;
+            NodoABB<E> res = new NodoABB<>(v[mitad]);
+            res.izq = construirEquilibrado(v, ini, mitad - 1);
+            res.der = construirEquilibrado(v, mitad + 1, fin);
+            //res.talla = 1 + talla(res.izq) + talla(res.der);
+            return res;
+        }
     }
     
     /** Reconstruye el ABB, con los mismos datos, de forma que quede equilibrado        
