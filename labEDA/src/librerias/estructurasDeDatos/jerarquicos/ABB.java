@@ -4,7 +4,6 @@ import librerias.estructurasDeDatos.modelos.Cola;
 import librerias.estructurasDeDatos.lineales.ArrayCola;
 import librerias.util.Ordenacion;
 
-
 /** Clase ABB<E> que representa un Arbol Binario de Busqueda
  *  mediante un enlace a su raiz. Sus caracteristicas son las siguientes: 
  *  1.- El tipo de sus elementos es E extends Comparable<E>
@@ -21,15 +20,15 @@ public class ABB<E extends Comparable<E>> {
 
     /** Constructor de un ABB vacio 
      */
-    public ABB() { this.raiz = null; }
+    public ABB() { raiz = null; }
     
     /** Constructor de un ABB con los elementos del vector dado.
      *  El ABB resultante debe estar equilibrado.
      *  @param v    Array con los elementos a insertar en el ABB
      */
-    public ABB(E[] v) {
-        Ordenacion.mergeSort2(v);
-        this.raiz = construirEquilibrado(v, 0, v.length - 1);
+    public ABB(E[] v) {        
+        // COMPLETAR   
+        raiz = construirEquilibrado(v, 0, v.length - 1);
     }
     
     /** Construye un ABB equilibrado con los elementos del vector dado.
@@ -39,22 +38,23 @@ public class ABB<E extends Comparable<E>> {
      *  @return      Raiz del subárbol
      */
     protected NodoABB<E> construirEquilibrado(E[] v, int ini, int fin) {
-        if (ini > fin) return null;
-        else {
-            int mitad = ini+fin/2;
-            NodoABB<E> res = new NodoABB<>(v[mitad]);
-            res.izq = construirEquilibrado(v, ini, mitad - 1);
-            res.der = construirEquilibrado(v, mitad + 1, fin);
-            //res.talla = 1 + talla(res.izq) + talla(res.der);
-            return res;
+        // COMPLETAR  
+        // PARA QUE COMPILE *** CAMBIAR
+        int m = (ini + fin) / 2;
+        NodoABB<E> raiz = new NodoABB<E>(v[m]);
+        if(ini < fin) {
+            raiz.izq = construirEquilibrado(v, ini, m- 1);
+            raiz.der = construirEquilibrado(v, m + 1, fin);
         }
+        return raiz;
     }
     
     /** Reconstruye el ABB, con los mismos datos, de forma que quede equilibrado        
      */
     public void reconstruirEquilibrado() {        
-        E[] elArray = toArrayInOrden();
-        this.raiz = construirEquilibrado(elArray, 0, elArray.length - 1);
+        // COMPLETAR     
+        E[] v = toArrayInOrden();
+        raiz = construirEquilibrado(v, 1, v.length - 1);
     }
     
     /** Devuelve el sucesor de un elemento en el ABB
