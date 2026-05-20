@@ -20,7 +20,6 @@ public class UsosColaPrioridad {
      *  ordene un array v de elementos Comparable. 
      */
     public static <E extends Comparable<E>> void cPSort(E[] v) {
-        // COMPLETAR
     }
     
     /** Problema 2:
@@ -31,9 +30,23 @@ public class UsosColaPrioridad {
      *  y, ademas, cP1 y cP2 deben quedar vacias al concluir su ejecucion.
      */
     public static <E extends Comparable<E>> ListaConPI<E> cPFusionar(
-        ColaPrioridad<E> cP1, ColaPrioridad<E> cP2) 
-    {
-        // COMPLETAR
+        ColaPrioridad<E> cP1, ColaPrioridad<E> cP2) {
+
+        ListaConPI<E> res = new LEGListaConPI<E>();
+
+        while (!cP1.esVacia() && !cP2.esVacia()) {
+            if (cP1.recuperarMin().compareTo(cP2.recuperarMin()) < 0) {
+                res.insertar(cP1.eliminarMin());
+            } else {
+                res.insertar(cP2.eliminarMin());
+            }
+        }
+
+        while (!cP1.esVacia()) { res.insertar(cP1.eliminarMin()); }
+
+        while (!cP2.esVacia()) { res.insertar(cP2.eliminarMin()); }
+
+        return res;
     }
     
     /** Problema 3:
@@ -45,6 +58,7 @@ public class UsosColaPrioridad {
      */
     public static boolean cPEsLineal(ColaPrioridad<Double> cP, double epsilon) {
         // COMPLETAR
+        return true;
     }
     
     /** Problema 4:
@@ -54,9 +68,19 @@ public class UsosColaPrioridad {
      *  El metodo debe tener un coste O(X log k), siendo X la longitud de v.
      */
     public static <E extends Comparable<E>> ColaPrioridad<E> cPTopK(
-        E[] v, int k) 
-    {
-        // COMPLETAR
+        E[] v, int k) {
+
+        ColaPrioridad<E> res = new MonticuloBinario<>(k + 1); // Solo se crea un Mont. de K elemntos
+
+        for (int i = 0; i < v.length; i++) {
+            res.insertar(v[i]);
+            if (res.recuperarMin().compareTo(v[i]) > k) { // Solo meto los que sean mejores que el peor ( el de valor minimo )
+                res.eliminarMin();
+                res.insertar(v[i]);
+            }
+        }
+
+        return res;
     }
     
 }
