@@ -5,12 +5,12 @@ import librerias.estructurasDeDatos.modelos.ListaConPI;
 import librerias.estructurasDeDatos.lineales.ArrayCola;
 
 // EN LA SEGUNDA SESION: incluir los siguientes import: 
-/*
+
 import librerias.estructurasDeDatos.modelos.UFSet;
 import librerias.estructurasDeDatos.jerarquicos.ForestUFSet;
 import librerias.estructurasDeDatos.modelos.ColaPrioridad;
 import librerias.estructurasDeDatos.jerarquicos.MonticuloBinario;
-*/
+
 
 /** Clase abstracta Grafo: Base de la jerarquia Grafo, que define el 
  *  comportamiento de un grafo.
@@ -191,8 +191,29 @@ public abstract class Grafo {
       *                   si el grafo no es Conexo
      */ 
     public Arista[] kruskal() {       
-        /*COMPLETAR EN LA SEGUNDA SESION*/
-        // CAMBIAR 
-        return null;
+        Arista[] res = new Arista[numVertices() - 1];
+        ColaPrioridad aristasFactibles = new MonticuloBinario(numAristas());
+        UFSet uf = new ForestUFSet(numVertices());
+        
+        for(int i = 0; i < numVertices(); i++) {
+            ListaConPI<Adyacente> adyacentes = adyacentesDe(i);
+            if (adyacentes.esVacia()) return null;
+            for(adyacentes.inicio(); !adyacentes.esFin(); adyacentes.siguiente()) {
+                aristasFactibles.insertar((Comparable) new Arista(i, adyacentes.recuperar().destino, adyacentes.recuperar().peso));
+            }
+        }
+        
+        int nAristas = 0;
+        while(nAristas < numVertices() - 1 && !aristasFactibles.esVacia()) {
+            Arista aux = (Arista)aristasFactibles.eliminarMin();
+            int ufV = uf.find(aux.getOrigen());
+            int ufW = uf.find(aux.getDestino());
+            if(ufV != ufW) {
+                uf.union(ufV, ufW);
+                res[nAristas++] = aux;
+            }
+        }
+        
+        return nAristas == numVertices() - 1 ? res : null;
     }
 }
